@@ -1,7 +1,8 @@
 #pragma once
 #include "minecraft/item/Item.h"
 
-class BowItem : public Item {
+class RangedWeaponItem : public Item {};
+class BowItem : public RangedWeaponItem {
 public:
     BowItem(const std::string&, int);
 };

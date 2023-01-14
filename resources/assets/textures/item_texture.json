@@ -1,0 +1,9 @@
+{
+    "resource_pack_name": "EE",
+    "texture_name": "atlas.items",
+    "texture_data": {
+        "philosophers_stone": {
+            "textures": "textures/items/philosophers_stone"
+        }
+    }
+}

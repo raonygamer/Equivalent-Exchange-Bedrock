@@ -1,0 +1,26 @@
+{
+    "format_version": 2,
+    "header": {
+        "min_engine_version": [
+            1,
+            14,
+            0
+        ],
+        "name": "EE",
+        "description": "EEMod",
+        "uuid": "e440fa65-3c10-4c1f-81b1-b9f5b196e07a",
+        "version": [
+            0,
+            0,
+            1
+        ]
+    },
+    "modules": [
+        {
+            "description": "EEMod",
+            "type": "resources",
+            "uuid": "c66e86cc-15ec-43fc-8792-e3a1db756372",
+            "version": [0, 0, 1]
+        }
+    ]
+}
