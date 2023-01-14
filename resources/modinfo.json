@@ -1,9 +1,10 @@
 {
-    "nameId": "Example",
-    "name": "Template Name",
-    "description": "Template Description",
+    "nameId": "EquivalentExchange",
+    "name": "Equivalent Exchange Mod",
+    "description": "",
     "version": "1.0.0",
     "mcversion": [
-        "1.14.60.5"
+        "1.14.60.5",
+        "1.16.40.2"
     ]
 }

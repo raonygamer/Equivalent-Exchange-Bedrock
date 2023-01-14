@@ -1,24 +1,2089 @@
 {
-    "version": [],
-
-    "vtable": [
-        {
-            "name": "",
-            "address": [],
-            "functions": []
-        }
-    ],
-
-    "includes": [],
-
-    "variables": {
-        "": []
+  "vtable": [
+    {
+      "name": "BowItem",
+      "address": "0x2B6FEB8",
+      "parent": "Item",
+      "functions": []
     },
+    {
+      "name": "Item",
+      "address": "0x2B766C0",
+      "functions": [
+        "??1Item@@UEAA@XZ",
+        "?tearDown@Item@@UEAAXXZ",
+        "?getMaxUseDuration@Item@@UEBAHPEBVItemStack@@@Z",
+        "?getMaxUseDuration@Item@@UEBAHPEBVItemInstance@@@Z",
+        "?isExperimental@Item@@UEBA_NPEBVItemDescriptor@@@Z",
+        "?setMaxStackSize@Item@@UEAAAEAV1@E@Z",
+        "?setCategory@Item@@UEAAAEAV1@W4CreativeItemCategory@@@Z",
+        "?setStackedByData@Item@@UEAAAEAV1@_N@Z",
+        "?setMaxDamage@Item@@UEAAAEAV1@H@Z",
+        "?setHandEquipped@Item@@UEAAAEAV1@XZ",
+        "?setUseAnimation@Item@@UEAAAEAV1@W4UseAnimation@@@Z",
+        "?setMaxUseDuration@Item@@UEAAAEAV1@H@Z",
+        "?setRequiresWorldBuilder@Item@@UEAAAEAV1@_N@Z",
+        "?setExplodable@Item@@UEAAAEAV1@_N@Z",
+        "?setIsGlint@Item@@UEAAAEAV1@_N@Z",
+        "?setShouldDespawn@Item@@UEAAAEAV1@_N@Z",
+        "?getBlockShape@Item@@UEBA?AW4BlockShape@@XZ",
+        "?canBeDepleted@Item@@UEBA_NXZ",
+        "?canDestroySpecial@Item@@UEBA_NAEBVBlock@@@Z",
+        "?getLevelDataForAuxValue@Item@@UEBAHH@Z",
+        "?isStackedByData@Item@@UEBA_NXZ",
+        "?getMaxDamage@Item@@UEBAFXZ",
+        "?getAttackDamage@Item@@UEBAHXZ",
+        "?isHandEquipped@Item@@UEBA_NXZ",
+        "?isArmor@Item@@UEBA_NXZ",
+        "?isDye@Item@@UEBA_NXZ",
+        "?isFertilizer@Item@@UEBA_NH@Z",
+        "?isGlint@Item@@UEBA_NAEBVItemStackBase@@@Z",
+        "?isThrowable@Item@@UEBA_NXZ",
+        "?isPattern@Item@@UEBA_NXZ",
+        "?showsDurabilityInCreative@Item@@UEBA_NXZ",
+        "?isWearableThroughLootTable@Item@@UEBA_NAEBV?$unique_ptr@VCompoundTag@@U?$default_delete@VCompoundTag@@@std@@@std@@@Z",
+        "?canDestroyInCreative@Item@@UEBA_NXZ",
+        "?isDestructive@Item@@UEBA_NH@Z",
+        "?isLiquidClipItem@Item@@UEBA_NH@Z",
+        "?requiresInteract@Item@@UEBA_NXZ",
+        "?appendFormattedHovertext@Item@@UEBAXAEBVItemStackBase@@AEAVLevel@@AEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@_N@Z",
+        "?isValidRepairItem@Item@@UEBA_NAEBVItemInstance@@0@Z",
+        "?getEnchantSlot@Item@@UEBAHXZ",
+        "?getEnchantValue@Item@@UEBAHXZ",
+        "?getArmorValue@Item@@UEBAHXZ",
+        "?isComplex@Item@@UEBA_NXZ",
+        "?isValidAuxValue@Item@@UEBA_NH@Z",
+        "?getDamageChance@Item@@UEBAHH@Z",
+        "?uniqueAuxValues@Item@@UEBA_NXZ",
+        "?isMultiColorTinted@Item@@UEBA_NAEBVItemStack@@@Z",
+        "?getColor@Item@@UEBA?AVColor@@AEBV?$unique_ptr@VCompoundTag@@U?$default_delete@VCompoundTag@@@std@@@std@@AEBVItemDescriptor@@@Z",
+        "?getBaseColor@Item@@UEBA?AVColor@@AEBVItemStack@@@Z",
+        "?getSecondaryColor@Item@@UEBA?AVColor@@AEBVItemStack@@@Z",
+        "?saveAdditionalData@Item@@UEBAXAEBVItemStackBase@@AEAVCompoundTag@@@Z",
+        "?readAdditionalData@Item@@UEBAXAEAVItemStackBase@@AEBVCompoundTag@@@Z",
+        "?isTintable@Item@@UEBA_NXZ",
+        "?use@Item@@UEBAAEAVItemStack@@AEAV2@AEAVPlayer@@@Z",
+        "?dispense@Item@@UEBA_NAEAVBlockSource@@AEAVContainer@@HAEBVVec3@@E@Z",
+        "?useTimeDepleted@Item@@UEBA?AW4ItemUseMethod@@AEAVItemStack@@PEAVLevel@@PEAVPlayer@@@Z",
+        "?useTimeDepleted@Item@@UEBA?AW4ItemUseMethod@@AEAVItemInstance@@PEAVLevel@@PEAVPlayer@@@Z",
+        "?releaseUsing@Item@@UEBAXAEAVItemStack@@PEAVPlayer@@H@Z",
+        "?releaseUsing@Item@@UEBAXAEAVItemInstance@@PEAVPlayer@@H@Z",
+        "?getDestroySpeed@Item@@UEBAMAEBVItemInstance@@AEBVBlock@@@Z",
+        "?hurtEnemy@Item@@UEBAXAEAVItemStack@@PEAVMob@@1@Z",
+        "?hurtEnemy@Item@@UEBAXAEAVItemInstance@@PEAVMob@@1@Z",
+        "?mineBlock@Item@@UEBA_NAEAVItemStack@@AEBVBlock@@HHHPEAVActor@@@Z",
+        "?mineBlock@Item@@UEBA_NAEAVItemInstance@@AEBVBlock@@HHHPEAVActor@@@Z",
+        "?buildDescriptionId@Item@@UEBA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBVItemDescriptor@@AEBV?$unique_ptr@VCompoundTag@@U?$default_delete@VCompoundTag@@@std@@@3@@Z",
+        "?buildEffectDescriptionName@Item@@UEBA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBVItemStackBase@@@Z",
+        "?buildCategoryDescriptionName@Item@@UEBA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ",
+        "?readUserData@Item@@UEBAXAEAVItemStackBase@@AEAVIDataInput@@AEAVReadOnlyBinaryStream@@@Z",
+        "?writeUserData@Item@@UEBAXAEBVItemStackBase@@AEAVIDataOutput@@@Z",
+        "?getMaxStackSize@Item@@UEBAEAEBVItemDescriptor@@@Z",
+        "?inventoryTick@Item@@UEBA_NAEAVItemStack@@AEAVLevel@@AEAVActor@@H_N@Z",
+        "?refreshedInContainer@Item@@UEBAXAEAVItemStackBase@@AEAVLevel@@@Z",
+        "?getCooldownType@Item@@UEBA?AW4CooldownType@@XZ",
+        "?getCooldownTime@Item@@UEBAHXZ",
+        "?fixupOnLoad@Item@@UEBAXAEAVItemStackBase@@AEAVLevel@@@Z",
+        "?fixupOnLoad@Item@@UEBAXAEAVItemStackBase@@@Z",
+        "?getDamageValue@Item@@UEBAFAEBV?$unique_ptr@VCompoundTag@@U?$default_delete@VCompoundTag@@@std@@@std@@@Z",
+        "?setDamageValue@Item@@UEBAXAEAVItemStackBase@@F@Z",
+        "?getInHandUpdateType@Item@@UEBA?AW4InHandUpdateType@@AEBVPlayer@@AEBVItemStack@@1_N2@Z",
+        "?getInHandUpdateType@Item@@UEBA?AW4InHandUpdateType@@AEBVPlayer@@AEBVItemInstance@@1_N2@Z",
+        "?isSameItem@Item@@UEBA_NAEBVItemStackBase@@0@Z",
+        "?getInteractText@Item@@UEBA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBVPlayer@@@Z",
+        "?getAnimationFrameFor@Item@@UEBAHPEAVMob@@_NPEBVItemStack@@_N@Z",
+        "?isEmissive@Item@@UEBA_NH@Z",
+        "?getIcon@Item@@UEBAAEBUTextureUVCoordinateSet@@AEBVItemStackBase@@H_N@Z",
+        "?getIconYOffset@Item@@UEBAHXZ",
+        "?setIcon@Item@@UEAAAEAV1@AEBUTextureUVCoordinateSet@@@Z",
+        "?setIcon@Item@@UEAAAEAV1@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@Z",
+        "?setIconAtlas@Item@@UEAAAEAV1@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@Z",
+        "?canBeCharged@Item@@UEBA_NXZ",
+        "?playSoundIncrementally@Item@@UEBAXAEBVItemStack@@AEAVMob@@@Z",
+        "?playSoundIncrementally@Item@@UEBAXAEBVItemInstance@@AEAVMob@@@Z",
+        "?getAuxValuesDescription@Item@@UEBA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ",
+        "?_checkUseOnPermissions@Item@@EEBA_NAEAVActor@@AEAVItemStack@@AEBEAEBVBlockPos@@@Z",
+        "?_checkUseOnPermissions@Item@@EEBA_NAEAVActor@@AEAVItemInstance@@AEBEAEBVBlockPos@@@Z",
+        "?_calculatePlacePos@Item@@EEBA_NAEAVItemStack@@AEAVActor@@AEAEAEAVBlockPos@@@Z",
+        "?_calculatePlacePos@Item@@EEBA_NAEAVItemInstance@@AEAVActor@@AEAEAEAVBlockPos@@@Z",
+        "?_useOn@Item@@EEBA_NAEAVItemStack@@AEAVActor@@VBlockPos@@EMMM@Z",
+        "?_useOn@Item@@EEBA_NAEAVItemInstance@@AEAVActor@@VBlockPos@@EMMM@Z"
+      ]
+    },
+    {
+      "name": "DiggerItem",
+      "parent": "Item",
+      "address": "0x2B72240",
+      "functions": [
+        "??1DiggerItem@@UEAA@XZ",
+        "?getAttackDamage@DiggerItem@@UEBAHXZ",
+        "?isHandEquipped@DiggerItem@@UEBA_NXZ",
+        "?appendFormattedHovertext@DiggerItem@@UEBAXAEBVItemStackBase@@AEAVLevel@@AEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@_N@Z",
+        "?isValidRepairItem@DiggerItem@@UEBA_NAEBVItemInstance@@0@Z",
+        "?getEnchantValue@DiggerItem@@UEBAHXZ",
+        "?getDestroySpeed@DiggerItem@@UEBAMAEBVItemInstance@@AEBVBlock@@@Z",
+        "?mineBlock@DiggerItem@@UEBA_NAEAVItemStack@@AEBVBlock@@HHHPEAVActor@@@Z"
+      ]
+    },
+    {
+      "name": "BlockPlanterItem",
+      "parent": "Item",
+      "address": "0x2B6F570",
+      "functions": [
+        "??1BlockPlanterItem@@UEAA@XZ",
+        "?_calculatePlacePos@BlockPlanterItem@@EEBA_NAEAVItemStack@@AEAVActor@@AEAEAEAVBlockPos@@@Z",
+        "?_useOn@BlockPlanterItem@@EEBA_NAEAVItemStack@@AEAVActor@@VBlockPos@@EMMM@Z"
+      ]
+    },
+    {
+      "name": "BlockItem",
+      "parent": "Item",
+      "address": "0x2B6F258",
+      "functions": [
+        "??1BlockItem@@UEAA@XZ",
+        "?isExperimental@BlockItem@@UEBA_NPEBVItemDescriptor@@@Z",
+        "?isDestructive@BlockItem@@UEBA_NH@Z",
+        "?isValidAuxValue@BlockItem@@UEBA_NH@Z",
+        "?buildDescriptionId@BlockItem@@UEBA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBVItemDescriptor@@AEBV?$unique_ptr@VCompoundTag@@U?$default_delete@VCompoundTag@@@std@@@3@@Z",
+        "?isEmissive@BlockItem@@UEBA_NH@Z",
+        "?getIcon@BlockItem@@UEBAAEBUTextureUVCoordinateSet@@AEBVItemStackBase@@H_N@Z",
+        "?getIconYOffset@BlockItem@@UEBAHXZ",
+        "?_calculatePlacePos@BlockItem@@EEBA_NAEAVItemStack@@AEAVActor@@AEAEAEAVBlockPos@@@Z",
+        "?_useOn@BlockItem@@EEBA_NAEAVItemStack@@AEAVActor@@VBlockPos@@EMMM@Z"
+      ]
+    },
+    {
+      "name": "AuxDataBlockItem",
+      "parent": "BlockItem",
+      "address": "0x2B6D998",
+      "functions": [
+        "?getLevelDataForAuxValue@AuxDataBlockItem@@UEBAHH@Z",
+        "?buildDescriptionId@AuxDataBlockItem@@UEBA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBVItemDescriptor@@AEBV?$unique_ptr@VCompoundTag@@U?$default_delete@VCompoundTag@@@std@@@3@@Z"
+      ]
+    },
+    {
+      "name": "BucketItem",
+      "parent": "Item",
+      "address": "0x2B701D0",
+      "functions": [
+        "?isDestructive@BucketItem@@UEBA_NH@Z",
+        "?isLiquidClipItem@BucketItem@@UEBA_NH@Z",
+        "?isValidAuxValue@BucketItem@@UEBA_NH@Z",
+        "?uniqueAuxValues@BucketItem@@UEBA_NXZ",
+        "?use@BucketItem@@UEBAAEAVItemStack@@AEAV2@AEAVPlayer@@@Z",
+        "?dispense@BucketItem@@UEBA_NAEAVBlockSource@@AEAVContainer@@HAEBVVec3@@E@Z",
+        "?useTimeDepleted@BucketItem@@UEBA?AW4ItemUseMethod@@AEAVItemStack@@PEAVLevel@@PEAVPlayer@@@Z",
+        "?releaseUsing@BucketItem@@UEBAXAEAVItemStack@@PEAVPlayer@@H@Z",
+        "?buildDescriptionId@BucketItem@@UEBA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBVItemDescriptor@@AEBV?$unique_ptr@VCompoundTag@@U?$default_delete@VCompoundTag@@@std@@@3@@Z",
+        "?getMaxStackSize@BucketItem@@UEBAEAEBVItemDescriptor@@@Z",
+        "?isEmissive@BucketItem@@UEBA_NH@Z",
+        "?getIcon@BucketItem@@UEBAAEBUTextureUVCoordinateSet@@AEBVItemStackBase@@H_N@Z",
+        "?setIcon@BucketItem@@UEAAAEAVItem@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@Z",
+        "?getAuxValuesDescription@BucketItem@@UEBA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ",
+        "?_useOn@BucketItem@@EEBA_NAEAVItemStack@@AEAVActor@@VBlockPos@@EMMM@Z"
+      ]
+    },
+    {
+      "name": "BlockLegacy",
+      "address": "0x2B8E7D0",
+      "functions": [
+        "??1BlockLegacy@@UEAA@XZ",
+        "?tick@BlockLegacy@@UEBAXAEAVBlockSource@@AEBVBlockPos@@AEAVRandom@@@Z",
+        "?getStateFromLegacyData@BlockLegacy@@UEBAAEBVBlock@@G@Z",
+        "?getNextBlockPermutation@BlockLegacy@@UEBAPEBVBlock@@AEBV2@@Z",
+        "?getCollisionShape@BlockLegacy@@UEBA_NAEAVAABB@@AEBVBlock@@AEAVBlockSource@@AEBVBlockPos@@PEAVActor@@@Z",
+        "?isObstructingChests@BlockLegacy@@UEBA_NAEAVBlockSource@@AEBVBlockPos@@@Z",
+        "?randomlyModifyPosition@BlockLegacy@@UEBA?AVVec3@@AEBVBlockPos@@@Z",
+        "?randomlyModifyPosition@BlockLegacy@@UEBA?AVVec3@@AEBVBlockPos@@AEAH@Z",
+        "?addAABBs@BlockLegacy@@UEBAXAEBVBlock@@AEAVBlockSource@@AEBVBlockPos@@PEBVAABB@@AEAV?$vector@VAABB@@V?$allocator@VAABB@@@std@@@std@@@Z",
+        "?getAABB@BlockLegacy@@UEBAAEBVAABB@@AEAVBlockSource@@AEBVBlockPos@@AEBVBlock@@AEAV2@_N@Z",
+        "?addCollisionShapes@BlockLegacy@@UEBA_NAEBVBlock@@AEAVBlockSource@@AEBVBlockPos@@PEBVAABB@@AEAV?$vector@VAABB@@V?$allocator@VAABB@@@std@@@std@@PEAVActor@@@Z",
+        "?getOutline@BlockLegacy@@UEBAAEBVAABB@@AEAVBlockSource@@AEBVBlockPos@@AEAV2@@Z",
+        "?getLiquidClipVolume@BlockLegacy@@UEBA_NAEAVBlockSource@@AEBVBlockPos@@AEAVAABB@@@Z",
+        "?onProjectileHit@BlockLegacy@@UEBAXAEAVBlockSource@@AEBVBlockPos@@AEBVActor@@@Z",
+        "?liquidCanFlowIntoFromDirection@BlockLegacy@@UEBA_NEAEBV?$function@$$A6AAEBVBlock@@AEBVBlockPos@@@Z@std@@AEBVBlockPos@@@Z",
+        "?getLightEmission@BlockLegacy@@UEBA?AUBrightness@@AEBVBlock@@@Z",
+        "?shouldRandomTick@BlockLegacy@@UEBA_NXZ",
+        "?hasVariableLighting@BlockLegacy@@UEBA_NXZ",
+        "?isStrippable@BlockLegacy@@UEBA_NAEBVBlock@@@Z",
+        "?getStrippedBlock@BlockLegacy@@UEBAAEBVBlock@@AEBV2@@Z",
+        "?canProvideSupport@BlockLegacy@@UEBA_NAEBVBlock@@EW4BlockSupportType@@@Z",
+        "?canConnect@BlockLegacy@@UEBA_NAEBVBlock@@E0@Z",
+        "?getConnectedDirections@BlockLegacy@@UEBAXAEBVBlock@@AEBVBlockPos@@AEAVBlockSource@@AEA_N333@Z",
+        "?isCropBlock@BlockLegacy@@UEBA_NXZ",
+        "?isStemBlock@BlockLegacy@@UEBA_NXZ",
+        "?isContainerBlock@BlockLegacy@@UEBA_NXZ",
+        "?isCraftingBlock@BlockLegacy@@UEBA_NXZ",
+        "?isInteractiveBlock@BlockLegacy@@UEBA_NXZ",
+        "?isWaterBlocking@BlockLegacy@@UEBA_NXZ",
+        "?isHurtableBlock@BlockLegacy@@UEBA_NXZ",
+        "?isFenceBlock@BlockLegacy@@UEBA_NXZ",
+        "?isFenceGateBlock@BlockLegacy@@UEBA_NXZ",
+        "?isThinFenceBlock@BlockLegacy@@UEBA_NXZ",
+        "?isWallBlock@BlockLegacy@@UEBA_NXZ",
+        "?isStairBlock@BlockLegacy@@UEBA_NXZ",
+        "?isSlabBlock@BlockLegacy@@UEBA_NXZ",
+        "?isDoorBlock@BlockLegacy@@UEBA_NXZ",
+        "?isRailBlock@BlockLegacy@@UEBA_NXZ",
+        "?isButtonBlock@BlockLegacy@@UEBA_NXZ",
+        "?canHurtAndBreakItem@BlockLegacy@@UEBA_NXZ",
+        "?isSignalSource@BlockLegacy@@UEBA_NXZ",
+        "?canBeOriginalSurface@BlockLegacy@@UEBA_NXZ",
+        "?isValidAuxValue@BlockLegacy@@UEBA_NH@Z",
+        "?canFillAtPos@BlockLegacy@@UEBA_NAEAVBlockSource@@AEBVBlockPos@@AEBVBlock@@@Z",
+        "?sanitizeFillBlock@BlockLegacy@@UEBAAEBVBlock@@AEAVBlockSource@@AEBVBlockPos@@AEBV2@@Z",
+        "?onFillBlock@BlockLegacy@@UEBAXAEAVBlockSource@@AEBVBlockPos@@AEBVBlock@@@Z",
+        "?getDirectSignal@BlockLegacy@@UEBAHAEAVBlockSource@@AEBVBlockPos@@H@Z",
+        "?waterSpreadCausesSpawn@BlockLegacy@@UEBA_NXZ",
+        "?canContainLiquid@BlockLegacy@@UEBA_NXZ",
+        "?shouldConnectToRedstone@BlockLegacy@@UEBA_NAEAVBlockSource@@AEBVBlockPos@@H@Z",
+        "?handleRain@BlockLegacy@@UEBAXAEAVBlockSource@@AEBVBlockPos@@M@Z",
+        "?canBeUsedInCommands@BlockLegacy@@UEBA_N_NAEBVBaseGameVersion@@@Z",
+        "?getThickness@BlockLegacy@@UEBAMXZ",
+        "?getFlexibility@BlockLegacy@@UEBAMAEAVBlockSource@@AEBVBlockPos@@@Z",
+        "?checkIsPathable@BlockLegacy@@UEBA_NAEAVActor@@AEBVBlockPos@@1@Z",
+        "?shouldDispense@BlockLegacy@@UEBA_NAEAVBlockSource@@AEAVContainer@@@Z",
+        "?dispense@BlockLegacy@@UEBA_NAEAVBlockSource@@AEAVContainer@@HAEBVVec3@@E@Z",
+        "?onPlace@BlockLegacy@@UEBAXAEAVBlockSource@@AEBVBlockPos@@@Z",
+        "?onRemove@BlockLegacy@@UEBAXAEAVBlockSource@@AEBVBlockPos@@@Z",
+        "?onExploded@BlockLegacy@@UEBAXAEAVBlockSource@@AEBVBlockPos@@PEAVActor@@@Z",
+        "?onStepOn@BlockLegacy@@UEBAXAEAVActor@@AEBVBlockPos@@@Z",
+        "?onFallOn@BlockLegacy@@UEBAXAEAVBlockSource@@AEBVBlockPos@@PEAVActor@@M@Z",
+        "?transformOnFall@BlockLegacy@@UEBAXAEAVBlockSource@@AEBVBlockPos@@PEAVActor@@M@Z",
+        "?onRedstoneUpdate@BlockLegacy@@UEBAXAEAVBlockSource@@AEBVBlockPos@@H_N@Z",
+        "?onMove@BlockLegacy@@UEBAXAEAVBlockSource@@AEBVBlockPos@@1@Z",
+        "?detachesOnPistonMove@BlockLegacy@@UEBA_NAEAVBlockSource@@AEBVBlockPos@@@Z",
+        "?movedByPiston@BlockLegacy@@UEBAXAEAVBlockSource@@AEBVBlockPos@@@Z",
+        "?setupRedstoneComponent@BlockLegacy@@UEBAXAEAVBlockSource@@AEBVBlockPos@@@Z",
+        "?getRedstoneProperty@BlockLegacy@@UEBA?AW4BlockProperty@@AEAVBlockSource@@AEBVBlockPos@@@Z",
+        "?updateEntityAfterFallOn@BlockLegacy@@UEBAXAEAVActor@@@Z",
+        "?isBounceBlock@BlockLegacy@@UEBA_NXZ",
+        "?ignoreEntitiesOnPistonMove@BlockLegacy@@UEBA_NAEBVBlock@@@Z",
+        "?onFertilized@BlockLegacy@@UEBA_NAEAVBlockSource@@AEBVBlockPos@@PEAVActor@@W4FertilizerType@@@Z",
+        "?mayConsumeFertilizer@BlockLegacy@@UEBA_NAEAVBlockSource@@@Z",
+        "?mayPick@BlockLegacy@@UEBA_NAEAVBlockSource@@AEBVBlock@@_N@Z",
+        "?mayPick@BlockLegacy@@UEBA_NXZ",
+        "?mayPlace@BlockLegacy@@UEBA_NAEAVBlockSource@@AEBVBlockPos@@@Z",
+        "?mayPlace@BlockLegacy@@UEBA_NAEAVBlockSource@@AEBVBlockPos@@E@Z",
+        "?mayPlaceOn@BlockLegacy@@UEBA_NAEAVBlockSource@@AEBVBlockPos@@@Z",
+        "?tryToPlace@BlockLegacy@@UEBA_NAEAVBlockSource@@AEBVBlockPos@@AEBVBlock@@PEBUActorBlockSyncMessage@@@Z",
+        "?breaksFallingBlocks@BlockLegacy@@UEBA_NAEBVBlock@@@Z",
+        "?destroy@BlockLegacy@@UEBAXAEAVBlockSource@@AEBVBlockPos@@AEBVBlock@@PEAVActor@@@Z",
+        "?playerWillDestroy@BlockLegacy@@UEBA_NAEAVPlayer@@AEBVBlockPos@@AEBVBlock@@@Z",
+        "?getIgnoresDestroyPermissions@BlockLegacy@@UEBA_NAEAVActor@@AEBVBlockPos@@@Z",
+        "?neighborChanged@BlockLegacy@@UEBAXAEAVBlockSource@@AEBVBlockPos@@1@Z",
+        "?getSecondPart@BlockLegacy@@UEBA_NAEAVBlockSource@@AEBVBlockPos@@AEAV3@@Z",
+        "?getResourceCount@BlockLegacy@@UEBAHAEAVRandom@@AEBVBlock@@H@Z",
+        "?getResourceItem@BlockLegacy@@UEBA?AVItemInstance@@AEAVRandom@@AEBVBlock@@H@Z",
+        "?asItemInstance@BlockLegacy@@UEBA?AVItemInstance@@AEAVBlockSource@@AEBVBlockPos@@AEBVBlock@@@Z",
+        "?spawnResources@BlockLegacy@@UEBAXAEAVBlockSource@@AEBVBlockPos@@AEBVBlock@@MH@Z",
+        "?spawnBurnResources@BlockLegacy@@UEBA_NAEAVBlockSource@@MMM@Z",
+        "?getExplosionResistance@BlockLegacy@@UEBAMPEAVActor@@@Z",
+        "?clip@BlockLegacy@@UEBA?AVHitResult@@AEAVBlockSource@@AEBVBlockPos@@AEBVVec3@@2_N@Z",
+        "?use@BlockLegacy@@UEBA_NAEAVPlayer@@AEBVBlockPos@@@Z",
+        "?getPlacementBlock@BlockLegacy@@UEBAAEBVBlock@@AEAVActor@@AEBVBlockPos@@EAEBVVec3@@H@Z",
+        "?calcVariant@BlockLegacy@@UEBAHAEAVBlockSource@@AEBVBlockPos@@@Z",
+        "?isAttachedTo@BlockLegacy@@UEBA_NAEAVBlockSource@@AEBVBlockPos@@AEAV3@@Z",
+        "?attack@BlockLegacy@@UEBA_NPEAVPlayer@@AEBVBlockPos@@@Z",
+        "?handleEntityInside@BlockLegacy@@UEBAXAEAVBlockSource@@AEBVBlockPos@@PEAVActor@@AEAVVec3@@@Z",
+        "?entityInside@BlockLegacy@@UEBAXAEAVBlockSource@@AEBVBlockPos@@AEAVActor@@@Z",
+        "?playerDestroy@BlockLegacy@@UEBAXAEAVPlayer@@AEBVBlockPos@@AEBVBlock@@@Z",
+        "?canSurvive@BlockLegacy@@UEBA_NAEAVBlockSource@@AEBVBlockPos@@@Z",
+        "?getExperienceDrop@BlockLegacy@@UEBAHAEAVRandom@@@Z",
+        "?canBeBuiltOver@BlockLegacy@@UEBA_NAEAVBlockSource@@AEBVBlockPos@@@Z",
+        "?triggerEvent@BlockLegacy@@UEBAXAEAVBlockSource@@AEBVBlockPos@@HH@Z",
+        "?executeEvent@BlockLegacy@@UEBAXAEAVBlockSource@@AEBVBlockPos@@AEBVBlock@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAVActor@@@Z",
+        "?hasTag@BlockLegacy@@UEBA_NAEAVBlockSource@@AEBVBlockPos@@AEBVBlock@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z",
+        "?getMobToSpawn@BlockLegacy@@UEBAPEBVMobSpawnerData@@AEBVSpawnConditions@@AEAVBlockSource@@@Z",
+        "?getMapColor@BlockLegacy@@UEBA?AVColor@@XZ",
+        "?getMapColor@BlockLegacy@@UEBA?AVColor@@AEAVBlockSource@@AEBVBlockPos@@@Z",
+        "?shouldStopFalling@BlockLegacy@@UEBA_NAEAVActor@@@Z",
+        "?pushesUpFallingBlocks@BlockLegacy@@UEBA_NXZ",
+        "?calcGroundFriction@BlockLegacy@@UEBAMAEAVMob@@AEBVBlockPos@@@Z",
+        "?canHaveExtraData@BlockLegacy@@UEBA_NXZ",
+        "?hasComparatorSignal@BlockLegacy@@UEBA_NXZ",
+        "?getComparatorSignal@BlockLegacy@@UEBAHAEAVBlockSource@@AEBVBlockPos@@AEBVBlock@@E@Z",
+        "?canSlide@BlockLegacy@@UEBA_NAEAVBlockSource@@AEBVBlockPos@@@Z",
+        "?getIconYOffset@BlockLegacy@@UEBAHXZ",
+        "?getRenderLayer@BlockLegacy@@UEBA?AW4BlockRenderLayer@@AEBVBlock@@AEAVBlockSource@@AEBVBlockPos@@@Z",
+        "?getRenderLayer@BlockLegacy@@UEBA?AW4BlockRenderLayer@@XZ",
+        "?buildDescriptionId@BlockLegacy@@UEBA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBVBlock@@@Z",
+        "?isAuxValueRelevantForPicking@BlockLegacy@@UEBA_NXZ",
+        "?getColor@BlockLegacy@@UEBAHAEAVBlockSource@@AEBVBlockPos@@AEBVBlock@@@Z",
+        "?getColor@BlockLegacy@@UEBAHAEBVBlock@@@Z",
+        "?getColorAtPos@BlockLegacy@@UEBAHAEAVBlockSource@@AEBVBlockPos@@@Z",
+        "?getColorForParticle@BlockLegacy@@UEBAHAEAVBlockSource@@AEBVBlockPos@@AEBVBlock@@@Z",
+        "?isSeasonTinted@BlockLegacy@@UEBA_NAEBVBlock@@AEAVBlockSource@@AEBVBlockPos@@@Z",
+        "?onGraphicsModeChanged@BlockLegacy@@UEAAX_N00@Z",
+        "?getExtraRenderLayers@BlockLegacy@@UEBAHXZ",
+        "?getShadeBrightness@BlockLegacy@@UEBAMXZ",
+        "?getVisualShapeInWorld@BlockLegacy@@UEBAAEBVAABB@@AEBVBlock@@AEAVBlockSource@@AEBVBlockPos@@AEAV2@_N@Z",
+        "?getVisualShape@BlockLegacy@@UEBAAEBVAABB@@AEBVBlock@@AEAV2@_N@Z",
+        "?getUIShape@BlockLegacy@@UEBAAEBVAABB@@AEBVBlock@@AEAV2@@Z",
+        "?telemetryVariant@BlockLegacy@@UEBAHAEAVBlockSource@@AEBVBlockPos@@@Z",
+        "?getVariant@BlockLegacy@@UEBAHAEBVBlock@@@Z",
+        "?canSpawnOn@BlockLegacy@@UEBA_NXZ",
+        "?getMappedFace@BlockLegacy@@UEBAEEAEBVBlock@@@Z",
+        "?getFaceFlip@BlockLegacy@@UEBA?AVFlip@@EAEBVBlock@@@Z",
+        "?animateTick@BlockLegacy@@UEBAXAEAVBlockSource@@AEBVBlockPos@@AEAVRandom@@@Z",
+        "?init@BlockLegacy@@UEAAAEAV1@XZ",
+        "?setLightBlock@BlockLegacy@@UEAAAEAV1@UBrightness@@@Z",
+        "?setLightEmission@BlockLegacy@@UEAAAEAV1@M@Z",
+        "?setExplodeable@BlockLegacy@@UEAAAEAV1@M@Z",
+        "?setDestroyTime@BlockLegacy@@UEAAAEAV1@M@Z",
+        "?setFriction@BlockLegacy@@UEAAAEAV1@M@Z",
+        "?addProperty@BlockLegacy@@UEAAAEAV1@W4BlockProperty@@@Z",
+        "?addState@BlockLegacy@@UEAAAEAV1@AEBVItemState@@_K@Z",
+        "?addState@BlockLegacy@@UEAAAEAV1@AEBVItemState@@@Z",
+        "?setAllowsRunes@BlockLegacy@@UEAAAEAV1@_N@Z",
+        "?setMapColor@BlockLegacy@@UEAAAEAV1@AEBVColor@@@Z",
+        "?canBeSilkTouched@BlockLegacy@@UEBA_NXZ",
+        "?getSilkTouchItemInstance@BlockLegacy@@UEBA?AVItemInstance@@AEBVBlock@@@Z",
+        "?setVisualShape@BlockLegacy@@UEAAXAEBVVec3@@0@Z",
+        "?setVisualShape@BlockLegacy@@UEAAXAEBVAABB@@@Z",
+        "?tryLegacyUpgrade@BlockLegacy@@UEBAPEBVBlock@@G@Z",
+        "?dealsContactDamage@BlockLegacy@@UEBA_NAEBVActor@@AEBVBlock@@_N@Z"
+      ]
+    },
+    {
+      "name": "LiquidBlock",
+      "parent": "BlockLegacy",
+      "address": "0x2BAE780",
+      "functions": [
+        "?getAABB@LiquidBlock@@UEBAAEBVAABB@@AEAVBlockSource@@AEBVBlockPos@@AEBVBlock@@AEAV2@_N@Z",
+        "?canContainLiquid@LiquidBlock@@UEBA_NXZ",
+        "?checkIsPathable@LiquidBlock@@UEBA_NAEAVActor@@AEBVBlockPos@@1@Z",
+        "?onPlace@LiquidBlock@@UEBAXAEAVBlockSource@@AEBVBlockPos@@@Z",
+        "?mayPick@LiquidBlock@@UEBA_NAEAVBlockSource@@AEBVBlock@@_N@Z",
+        "?neighborChanged@LiquidBlock@@UEBAXAEAVBlockSource@@AEBVBlockPos@@1@Z",
+        "?getResourceCount@LiquidBlock@@UEBAHAEAVRandom@@AEBVBlock@@H@Z",
+        "?handleEntityInside@LiquidBlock@@UEBAXAEAVBlockSource@@AEBVBlockPos@@PEAVActor@@AEAVVec3@@@Z",
+        "?getMapColor@LiquidBlock@@UEBA?AVColor@@AEAVBlockSource@@AEBVBlockPos@@@Z",
+        "?getColor@LiquidBlock@@UEBAHAEBVBlock@@@Z",
+        "?getColorAtPos@LiquidBlock@@UEBAHAEAVBlockSource@@AEBVBlockPos@@@Z",
+        "?animateTick@LiquidBlock@@UEBAXAEAVBlockSource@@AEBVBlockPos@@AEAVRandom@@@Z",
+        "?canBeSilkTouched@LiquidBlock@@UEBA_NXZ"
+      ]
+    },
+    {
+      "name": "ActorBlock",
+      "parent": "BlockLegacy",
+      "address": "0x2BA6BF8",
+      "functions": [
+        "?playerWillDestroy@ActorBlock@@UEBA_NAEAVPlayer@@AEBVBlockPos@@AEBVBlock@@@Z",
+        "?neighborChanged@ActorBlock@@UEBAXAEAVBlockSource@@AEBVBlockPos@@1@Z",
+        "?spawnResources@ActorBlock@@UEBAXAEAVBlockSource@@AEBVBlockPos@@AEBVBlock@@MH@Z",
+        "?triggerEvent@ActorBlock@@UEBAXAEAVBlockSource@@AEBVBlockPos@@HH@Z",
+        "?canBeSilkTouched@ActorBlock@@UEBA_NXZ",
+        "?getEntityResourceItem@ActorBlock@@UEBA?AVItemInstance@@AEAVRandom@@AEBVBlockActor@@H@Z"
+      ]
+    },
+    {
+      "name": "HeavyBlock",
+      "parent": "BlockLegacy",
+      "address": "0x2BA8488",
+      "functions": [
+        "?tick@HeavyBlock@@UEBAXAEAVBlockSource@@AEBVBlockPos@@AEAVRandom@@@Z",
+        "?onPlace@HeavyBlock@@UEBAXAEAVBlockSource@@AEBVBlockPos@@@Z",
+        "?neighborChanged@HeavyBlock@@UEBAXAEAVBlockSource@@AEBVBlockPos@@1@Z",
+        "?animateTick@HeavyBlock@@UEBAXAEAVBlockSource@@AEBVBlockPos@@AEAVRandom@@@Z",
+        "",
+        "",
+        "?falling@HeavyBlock@@UEBA_NXZ",
+        "?onLand@HeavyBlock@@UEBAXAEAVBlockSource@@AEBVBlockPos@@@Z",
+        "?isFreeToFall@HeavyBlock@@UEBA_NAEAVBlockSource@@AEBVBlockPos@@@Z",
+        "?startFalling@HeavyBlock@@MEBAXAEAVBlockSource@@AEBVBlockPos@@PEBVBlock@@_N@Z"
+      ]
+    },
+    {
+      "name": "ItemInstance",
+      "address": "0x2B769D8",
+      "functions": [
+        "",
+        "?reinit@ItemInstance@@UEAAXAEBVBlockLegacy@@H@Z",
+        "?reinit@ItemInstance@@MEAAXAEBVItem@@HH@Z"
+      ]
+    },
+    {
+      "name": "ItemStack",
+      "address": "0x2B76AD8",
+      "functions": [
+        "",
+        "?reinit@ItemStack@@UEAAXAEBVBlockLegacy@@H@Z",
+        "?reinit@ItemStack@@MEAAXAEBVItem@@HH@Z"
+      ]
+    },
+    {
+      "name": "ItemStackBase",
+      "address": "0x2B76AF8",
+      "functions": [
+        "??1ItemStackBase@@UEAA@XZ",
+        "?reinit@ItemStackBase@@UEAAXAEBVBlockLegacy@@H@Z",
+        "?reinit@ItemStackBase@@MEAAXAEBVItem@@HH@Z"
+      ]
+    },
+    {
+      "name": "Actor",
+      "address": "0x2B14130",
+      "functions": [
+        "?hasComponent@Actor@@UEBA_NAEBVHashString@Util@@@Z",
+        "?reloadHardcoded@Actor@@UEAAXW4InitializationMethod@1@AEBVVariantParameterList@@@Z",
+        "?reloadHardcodedClient@Actor@@UEAAXW4InitializationMethod@1@AEBVVariantParameterList@@@Z",
+        "?initializeComponents@Actor@@UEAAXW4InitializationMethod@1@AEBVVariantParameterList@@@Z",
+        "?reloadComponents@Actor@@UEAAXW4InitializationMethod@1@AEBVVariantParameterList@@@Z",
+        "??1Actor@@UEAA@XZ",
+        "?reset@Actor@@UEAAXXZ",
+        "?getOnDeathExperience@Actor@@UEAAHXZ",
+        "?getOwnerEntityType@Actor@@UEAA?AW4ActorType@@XZ",
+        "?remove@Actor@@UEAAXXZ",
+        "?setPos@Actor@@UEAAXAEBVVec3@@@Z",
+        "?getPos@Actor@@UEBAAEBVVec3@@XZ",
+        "?getPosOld@Actor@@UEBAAEBVVec3@@XZ",
+        "?getPosExtrapolated@Actor@@UEBA?BVVec3@@M@Z",
+        "?getAttachPos@Actor@@UEBA?AVVec3@@W4ActorLocation@@M@Z",
+        "?getFiringPos@Actor@@UEBA?AVVec3@@XZ",
+        "?setRot@Actor@@UEAAXAEBVVec2@@@Z",
+        "?move@Actor@@UEAAXAEBVVec3@@@Z",
+        "?getInterpolatedRidingPosition@Actor@@UEBA?AVVec3@@M@Z",
+        "?getInterpolatedBodyRot@Actor@@UEBAMM@Z",
+        "?getInterpolatedHeadRot@Actor@@UEBAMM@Z",
+        "?getInterpolatedBodyYaw@Actor@@UEBAMM@Z",
+        "?getYawSpeedInDegreesPerSecond@Actor@@UEBAMXZ",
+        "?getInterpolatedWalkAnimSpeed@Actor@@UEBAMM@Z",
+        "?getInterpolatedRidingOffset@Actor@@UEBA?AVVec3@@M@Z",
+        "?checkBlockCollisions@Actor@@UEAAXXZ",
+        "?checkBlockCollisions@Actor@@UEAAXAEBVAABB@@@Z",
+        "?breaksFallingBlocks@Actor@@UEBA_NXZ",
+        "?blockedByShield@Actor@@UEAAXAEBVActorDamageSource@@AEAV1@@Z",
+        "?moveRelative@Actor@@UEAAXMMMM@Z",
+        "?teleportTo@Actor@@UEAAXAEBVVec3@@_NHH@Z",
+        "?tryTeleportTo@Actor@@UEAA_NAEBVVec3@@_N1HH@Z",
+        "?chorusFruitTeleport@Actor@@UEAAXAEAVVec3@@@Z",
+        "?lerpTo@Actor@@UEAAXAEBVVec3@@AEBVVec2@@H@Z",
+        "?lerpMotion@Actor@@UEAAXAEBVVec3@@@Z",
+        "?getAddPacket@Actor@@UEAA?AV?$unique_ptr@VPacket@@U?$default_delete@VPacket@@@std@@@std@@XZ",
+        "?normalTick@Actor@@UEAAXXZ",
+        "?baseTick@Actor@@UEAAXXZ",
+        "?rideTick@Actor@@UEAAXXZ",
+        "?positionRider@Actor@@UEAAXAEAV1@M@Z",
+        "?getRidingHeight@Actor@@UEAAMXZ",
+        "?startRiding@Actor@@UEAA_NAEAV1@@Z",
+        "?addRider@Actor@@UEAAXAEAV1@@Z",
+        "?flagRiderToRemove@Actor@@UEAAXAEAV1@@Z",
+        "?getExitTip@Actor@@UEBA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV23@W4InputMode@@@Z",
+        "?intersects@Actor@@UEBA_NAEBVVec3@@0@Z",
+        "?isFree@Actor@@UEAA_NAEBVVec3@@@Z",
+        "?isFree@Actor@@UEAA_NAEBVVec3@@M@Z",
+        "?isInWall@Actor@@UEBA_NXZ",
+        "?isInvisible@Actor@@UEBA_NXZ",
+        "?canShowNameTag@Actor@@UEBA_NXZ",
+        "?canExistInPeaceful@Actor@@UEBA_NXZ",
+        "?setNameTagVisible@Actor@@UEAAX_N@Z",
+        "?getNameTag@Actor@@UEBAAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ",
+        "?getNameTagAsHash@Actor@@UEBA_KXZ",
+        "?getFormattedNameTag@Actor@@UEBA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ",
+        "?filterFormattedNameTag@Actor@@UEAAXAEBVUIProfanityContext@@@Z",
+        "?setNameTag@Actor@@UEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z",
+        "?getAlwaysShowNameTag@Actor@@UEBA_NXZ",
+        "?setScoreTag@Actor@@UEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z",
+        "?getScoreTag@Actor@@UEBAAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ",
+        "?isInWater@Actor@@UEBA_NXZ",
+        "?hasEnteredWater@Actor@@UEBA_NXZ",
+        "?isImmersedInWater@Actor@@UEBA_NXZ",
+        "?isInWaterOrRain@Actor@@UEBA_NXZ",
+        "?isInLava@Actor@@UEBA_NXZ",
+        "?isUnderLiquid@Actor@@UEBA_NW4MaterialType@@@Z",
+        "?isOverWater@Actor@@UEBA_NXZ",
+        "?makeStuckInBlock@Actor@@UEAAXM@Z",
+        "?getCameraOffset@Actor@@UEBAMXZ",
+        "?getShadowHeightOffs@Actor@@UEAAMXZ",
+        "?getShadowRadius@Actor@@UEBAMXZ",
+        "?getHeadLookVector@Actor@@UEAA?AVVec3@@M@Z",
+        "?canSeeInvisible@Actor@@UEBA_NXZ",
+        "?canSee@Actor@@UEBA_NAEBVVec3@@@Z",
+        "?canSee@Actor@@UEBA_NAEBV1@@Z",
+        "?isSkyLit@Actor@@UEAA_NM@Z",
+        "?getBrightness@Actor@@UEBAMM@Z",
+        "?interactPreventDefault@Actor@@UEAA_NXZ",
+        "?playerTouch@Actor@@UEAAXAEAVPlayer@@@Z",
+        "?onAboveBubbleColumn@Actor@@UEAAX_N@Z",
+        "?onInsideBubbleColumn@Actor@@UEAAX_N@Z",
+        "?isImmobile@Actor@@UEBA_NXZ",
+        "?isSilent@Actor@@UEAA_NXZ",
+        "?isPickable@Actor@@UEAA_NXZ",
+        "?isFishable@Actor@@UEBA_NXZ",
+        "?isSleeping@Actor@@UEBA_NXZ",
+        "?isShootable@Actor@@UEAA_NXZ",
+        "?isSneaking@Actor@@UEBA_NXZ",
+        "?setSneaking@Actor@@UEAAX_N@Z",
+        "?isBlocking@Actor@@UEBA_NXZ",
+        "?isDamageBlocked@Actor@@UEBA_NAEBVActorDamageSource@@@Z",
+        "?isAlive@Actor@@UEBA_NXZ",
+        "?isOnFire@Actor@@UEBA_NXZ",
+        "?isOnHotBlock@Actor@@UEBA_NXZ",
+        "?isCreativeModeAllowed@Actor@@UEAA_NXZ",
+        "?isSurfaceMob@Actor@@UEBA_NXZ",
+        "?isTargetable@Actor@@UEBA_NXZ",
+        "?canAttack@Actor@@UEBA_NPEAV1@_N@Z",
+        "?setTarget@Actor@@UEAAXPEAV1@@Z",
+        "?findAttackTarget@Actor@@UEAAPEAV1@XZ",
+        "?isValidTarget@Actor@@UEBA_NPEAV1@@Z",
+        "?attack@Actor@@UEAA_NAEAV1@@Z",
+        "?performRangedAttack@Actor@@UEAAXAEAV1@M@Z",
+        "?adjustDamageAmount@Actor@@UEBAXAEAH@Z",
+        "?getEquipmentCount@Actor@@UEBAHXZ",
+        "?setOwner@Actor@@UEAAXUActorUniqueID@@@Z",
+        "?setSitting@Actor@@UEAAX_N@Z",
+        "?onTame@Actor@@UEAAXXZ",
+        "?onFailedTame@Actor@@UEAAXXZ",
+        "?getInventorySize@Actor@@UEBAHXZ",
+        "?getEquipSlots@Actor@@UEBAHXZ",
+        "?getChestSlots@Actor@@UEBAHXZ",
+        "?setStanding@Actor@@UEAAX_N@Z",
+        "?canPowerJump@Actor@@UEBA_NXZ",
+        "?setCanPowerJump@Actor@@UEAAX_N@Z",
+        "?isJumping@Actor@@UEBA_NXZ",
+        "?isEnchanted@Actor@@UEBA_NXZ",
+        "?rideJumped@Actor@@UEAAXXZ",
+        "?rideLanded@Actor@@UEAAXAEBVVec3@@0@Z",
+        "?shouldRender@Actor@@UEBA_NXZ",
+        "?isInvulnerableTo@Actor@@UEBA_NAEBVActorDamageSource@@@Z",
+        "?actuallyHurt@Actor@@UEAAXHPEBVActorDamageSource@@_N@Z",
+        "?animateHurt@Actor@@UEAAXXZ",
+        "?doFireHurt@Actor@@UEAA_NH@Z",
+        "?onLightningHit@Actor@@UEAAXXZ",
+        "?onBounceStarted@Actor@@UEAAXAEBVBlockPos@@AEBVBlock@@@Z",
+        "?feed@Actor@@UEAAXH@Z",
+        "?handleEntityEvent@Actor@@UEAAXW4ActorEvent@@H@Z",
+        "?getPickRadius@Actor@@UEAAMXZ",
+        "?getActorRendererId@Actor@@UEBAAEBVHashedString@@XZ",
+        "?spawnAtLocation@Actor@@UEAAPEAVItemActor@@AEBVItemStack@@M@Z",
+        "?spawnAtLocation@Actor@@UEAAPEAVItemActor@@AEBVBlock@@HM@Z",
+        "?spawnAtLocation@Actor@@UEAAPEAVItemActor@@AEBVBlock@@H@Z",
+        "?spawnAtLocation@Actor@@UEAAPEAVItemActor@@HHM@Z",
+        "?spawnAtLocation@Actor@@UEAAPEAVItemActor@@HH@Z",
+        "?despawn@Actor@@UEAAXXZ",
+        "?killed@Actor@@UEAAXAEAV1@@Z",
+        "?awardKillScore@Actor@@UEAAXAEAV1@H@Z",
+        "?setArmor@Actor@@UEAAXW4ArmorSlot@@AEBVItemStack@@@Z",
+        "?getArmor@Actor@@UEBAAEBVItemStack@@W4ArmorSlot@@@Z",
+        "?getArmorMaterialTypeInSlot@Actor@@UEBA?AW4ArmorMaterialType@@W4ArmorSlot@@@Z",
+        "?getArmorMaterialTextureTypeInSlot@Actor@@UEBA?AW4ArmorTextureType@@W4ArmorSlot@@@Z",
+        "?getArmorColorInSlot@Actor@@UEBAMW4ArmorSlot@@H@Z",
+        "?setEquippedSlot@Actor@@UEAAXW4ArmorSlot@@AEBVItemStack@@@Z",
+        "?setEquippedSlot@Actor@@UEAAXW4ArmorSlot@@HH@Z",
+        "?getCarriedItem@Actor@@UEBAAEBVItemStack@@XZ",
+        "?setCarriedItem@Actor@@UEAAXAEBVItemStack@@@Z",
+        "?setOffhandSlot@Actor@@UEAAXAEBVItemStack@@@Z",
+        "?getEquippedTotem@Actor@@UEBAAEBVItemStack@@XZ",
+        "?consumeTotem@Actor@@UEAA_NXZ",
+        "?save@Actor@@UEAA_NAEAVCompoundTag@@@Z",
+        "?saveWithoutId@Actor@@UEAAXAEAVCompoundTag@@@Z",
+        "?load@Actor@@UEAA_NAEBVCompoundTag@@AEAVDataLoadHelper@@@Z",
+        "?loadLinks@Actor@@UEAAXAEBVCompoundTag@@AEAV?$vector@UActorLink@@V?$allocator@UActorLink@@@std@@@std@@AEAVDataLoadHelper@@@Z",
+        "?getEntityTypeId@Actor@@UEBA?AW4ActorType@@XZ",
+        "?queryEntityRenderer@Actor@@UEBAAEBVHashedString@@XZ",
+        "?getSourceUniqueID@Actor@@UEBA?AUActorUniqueID@@XZ",
+        "?setOnFire@Actor@@UEAAXH@Z",
+        "?getHandleWaterAABB@Actor@@UEBA?AVAABB@@XZ",
+        "?handleInsidePortal@Actor@@UEAAXAEBVBlockPos@@@Z",
+        "?getPortalCooldown@Actor@@UEBAHXZ",
+        "?getPortalWaitTime@Actor@@UEBAHXZ",
+        "?getDimensionId@Actor@@UEBAHXZ",
+        "?canChangeDimensions@Actor@@UEBA_NXZ",
+        "?changeDimension@Actor@@UEAAXAEBVChangeDimensionPacket@@@Z",
+        "?changeDimension@Actor@@UEAAXH_N@Z",
+        "?getControllingPlayer@Actor@@UEBA?AUActorUniqueID@@XZ",
+        "?checkFallDamage@Actor@@UEAAXM_N@Z",
+        "?causeFallDamage@Actor@@UEAAXM@Z",
+        "?handleFallDistanceOnServer@Actor@@UEAAXM_N@Z",
+        "?playSynchronizedSound@Actor@@UEAAXW4LevelSoundEvent@@AEBVVec3@@H_N@Z",
+        "?playSynchronizedSound@Actor@@UEAAXW4LevelSoundEvent@@AEBVVec3@@AEBVBlock@@_N@Z",
+        "?onSynchedDataUpdate@Actor@@UEAAXH@Z",
+        "?canAddRider@Actor@@UEBA_NAEAV1@@Z",
+        "?canBePulledIntoVehicle@Actor@@UEBA_NXZ",
+        "?inCaravan@Actor@@UEBA_NXZ",
+        "?isLeashableType@Actor@@UEAA_NXZ",
+        "?tickLeash@Actor@@UEAAXXZ",
+        "?sendMotionPacketIfNeeded@Actor@@UEAAXXZ",
+        "?canSynchronizeNewEntity@Actor@@UEBA_NXZ",
+        "?stopRiding@Actor@@UEAAX_N00@Z",
+        "?startSwimming@Actor@@UEAAXXZ",
+        "?stopSwimming@Actor@@UEAAXXZ",
+        "?buildDebugInfo@Actor@@UEBAXAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z",
+        "?getCommandPermissionLevel@Actor@@UEBA?AW4CommandPermissionLevel@@XZ",
+        "?getMutableAttribute@Actor@@UEAAPEAVAttributeInstance@@AEBVAttribute@@@Z",
+        "?getAttribute@Actor@@UEBAAEBVAttributeInstance@@AEBVAttribute@@@Z",
+        "?getDeathTime@Actor@@UEBAHXZ",
+        "?heal@Actor@@UEAAXH@Z",
+        "?isInvertedHealAndHarm@Actor@@UEBA_NXZ",
+        "?canBeAffected@Actor@@UEBA_NAEBVMobEffectInstance@@@Z",
+        "?canBeAffected@Actor@@UEBA_NH@Z",
+        "?canBeAffectedByArrow@Actor@@UEBA_NAEBVMobEffectInstance@@@Z",
+        "?onEffectAdded@Actor@@UEAAXAEAVMobEffectInstance@@@Z",
+        "?onEffectUpdated@Actor@@UEAAXAEBVMobEffectInstance@@@Z",
+        "?onEffectRemoved@Actor@@UEAAXAEAVMobEffectInstance@@@Z",
+        "?getAnimationComponent@Actor@@UEAAAEAVAnimationComponent@@XZ",
+        "?openContainerComponent@Actor@@UEAAXAEAVPlayer@@@Z",
+        "?swing@Actor@@UEAAXXZ",
+        "?useItem@Actor@@UEAAXAEAVItemStack@@W4ItemUseMethod@@_N@Z",
+        "?hasOutputSignal@Actor@@UEBA_NE@Z",
+        "?getOutputSignal@Actor@@UEBAHXZ",
+        "?getDebugText@Actor@@UEAAXAEAV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@@Z",
+        "?getMapDecorationRotation@Actor@@UEBAMXZ",
+        "?getRiderYRotation@Actor@@UEBAMAEBV1@@Z",
+        "?getYHeadRot@Actor@@UEBAMXZ",
+        "?isWorldBuilder@Actor@@UEAA_NXZ",
+        "?isCreative@Actor@@UEBA_NXZ",
+        "?isAdventure@Actor@@UEBA_NXZ",
+        "?add@Actor@@UEAA_NAEAVItemStack@@@Z",
+        "?drop@Actor@@UEAA_NAEBVItemStack@@_N@Z",
+        "?getInteraction@Actor@@UEAA_NAEAVPlayer@@AEAVActorInteraction@@AEBVVec3@@@Z",
+        "?canDestroyBlock@Actor@@UEBA_NAEBVBlock@@@Z",
+        "",
+        "?setSize@Actor@@UEAAXMM@Z",
+        "?getLifeSpan@Actor@@UEBAHXZ",
+        "?onOrphan@Actor@@UEAAXXZ",
+        "?wobble@Actor@@UEAAXXZ",
+        "?wasHurt@Actor@@UEAA_NXZ",
+        "?startSpinAttack@Actor@@UEAAXXZ",
+        "?stopSpinAttack@Actor@@UEAAXXZ",
+        "?setDamageNearbyMobs@Actor@@UEAAX_N@Z",
+        "?renderDebugServerState@Actor@@UEAAXAEBVOptions@@@Z",
+        "?reloadLootTable@Actor@@UEAAXPEBVEquipmentTableDescription@@@Z",
+        "?reloadLootTable@Actor@@UEAAXXZ",
+        "?getDeletionDelayTimeSeconds@Actor@@UEBAMXZ",
+        "?kill@Actor@@UEAAXXZ",
+        "?die@Actor@@UEAAXAEBVActorDamageSource@@@Z",
+        "?shouldTick@Actor@@UEBA_NXZ",
+        "?updateEntitySpecificMolangVariables@Actor@@UEAAXAEAVRenderParams@@@Z",
+        "?canMakeStepSound@Actor@@UEBA_NXZ",
+        "?outOfWorld@Actor@@UEAAXXZ",
+        "?_hurt@Actor@@UEAA_NAEBVActorDamageSource@@H_N1@Z",
+        "?markHurt@Actor@@UEAAXXZ",
+        "?readAdditionalSaveData@Actor@@UEAAXAEBVCompoundTag@@AEAVDataLoadHelper@@@Z",
+        "?addAdditionalSaveData@Actor@@UEAAXAEAVCompoundTag@@@Z",
+        "?_playStepSound@Actor@@UEAAXAEBVBlockPos@@AEBVBlock@@@Z",
+        "?_playFlySound@Actor@@UEAAXAEBVBlockPos@@AEBVBlock@@@Z",
+        "?_makeFlySound@Actor@@UEBA_NXZ",
+        "?checkInsideBlocks@Actor@@UEAAXM@Z",
+        "?pushOutOfBlocks@Actor@@UEAAXAEBVVec3@@@Z",
+        "?updateWaterState@Actor@@UEAA_NXZ",
+        "?doWaterSplashEffect@Actor@@UEAAXXZ",
+        "?spawnTrailBubbles@Actor@@UEAAXXZ",
+        "?updateInsideBlock@Actor@@UEAAXXZ",
+        "?getLootTable@Actor@@UEAAPEAVLootTable@@XZ",
+        "?getDefaultLootTable@Actor@@UEAAPEAVLootTable@@XZ",
+        "?_removeRider@Actor@@UEAAXAEBUActorUniqueID@@_N1@Z",
+        "?_onSizeUpdated@Actor@@UEAAXXZ",
+        "?_doAutoAttackOnTouch@Actor@@UEAAXAEAV1@@Z"
+      ]
+    },
+    {
+      "name": "Mob",
+      "parent": "Actor",
+      "address": "0x2B442F0",
+      "functions": [
+        "?hasComponent@Mob@@UEBA_NAEBVHashString@Util@@@Z",
+        "?reloadHardcoded@Mob@@UEAAXW4InitializationMethod@Actor@@AEBVVariantParameterList@@@Z",
+        "?reloadHardcodedClient@Mob@@UEAAXW4InitializationMethod@Actor@@AEBVVariantParameterList@@@Z",
+        "?initializeComponents@Mob@@UEAAXW4InitializationMethod@Actor@@AEBVVariantParameterList@@@Z",
+        "?getInterpolatedBodyRot@Mob@@UEBAMM@Z",
+        "?getInterpolatedHeadRot@Mob@@UEBAMM@Z",
+        "?getInterpolatedBodyYaw@Mob@@UEBAMM@Z",
+        "?getYawSpeedInDegreesPerSecond@Mob@@UEBAMXZ",
+        "?blockedByShield@Mob@@UEAAXAEBVActorDamageSource@@AEAVActor@@@Z",
+        "?teleportTo@Mob@@UEAAXAEBVVec3@@_NHH@Z",
+        "?lerpTo@Mob@@UEAAXAEBVVec3@@AEBVVec2@@H@Z",
+        "?normalTick@Mob@@UEAAXXZ",
+        "?baseTick@Mob@@UEAAXXZ",
+        "?rideTick@Mob@@UEAAXXZ",
+        "?startRiding@Mob@@UEAA_NAEAVActor@@@Z",
+        "?addRider@Mob@@UEAAXAEAVActor@@@Z",
+        "?playerTouch@Mob@@UEAAXAEAVPlayer@@@Z",
+        "?isImmobile@Mob@@UEBA_NXZ",
+        "?isPickable@Mob@@UEAA_NXZ",
+        "?isSleeping@Mob@@UEBA_NXZ",
+        "?isShootable@Mob@@UEAA_NXZ",
+        "?isBlocking@Mob@@UEBA_NXZ",
+        "?isAlive@Mob@@UEBA_NXZ",
+        "?isSurfaceMob@Mob@@UEBA_NXZ",
+        "?setTarget@Mob@@UEAAXPEAVActor@@@Z",
+        "?attack@Mob@@UEAA_NAEAVActor@@@Z",
+        "?canPowerJump@Mob@@UEBA_NXZ",
+        "?isJumping@Mob@@UEBA_NXZ",
+        "?actuallyHurt@Mob@@UEAAXHPEBVActorDamageSource@@_N@Z",
+        "?animateHurt@Mob@@UEAAXXZ",
+        "?doFireHurt@Mob@@UEAA_NH@Z",
+        "?handleEntityEvent@Mob@@UEAAXW4ActorEvent@@H@Z",
+        "?getArmorMaterialTypeInSlot@Mob@@UEBA?AW4ArmorMaterialType@@W4ArmorSlot@@@Z",
+        "?getArmorMaterialTextureTypeInSlot@Mob@@UEBA?AW4ArmorTextureType@@W4ArmorSlot@@@Z",
+        "?getArmorColorInSlot@Mob@@UEBAMW4ArmorSlot@@H@Z",
+        "?setEquippedSlot@Mob@@UEAAXW4ArmorSlot@@AEBVItemStack@@@Z",
+        "?setEquippedSlot@Mob@@UEAAXW4ArmorSlot@@HH@Z",
+        "?setOnFire@Mob@@UEAAXH@Z",
+        "?causeFallDamage@Mob@@UEAAXM@Z",
+        "?canBePulledIntoVehicle@Mob@@UEBA_NXZ",
+        "?inCaravan@Mob@@UEBA_NXZ",
+        "?stopRiding@Mob@@UEAAX_N00@Z",
+        "?buildDebugInfo@Mob@@UEBAXAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z",
+        "?getDeathTime@Mob@@UEBAHXZ",
+        "?swing@Mob@@UEAAXXZ",
+        "?getYHeadRot@Mob@@UEBAMXZ",
+        "?renderDebugServerState@Mob@@UEAAXAEBVOptions@@@Z",
+        "?kill@Mob@@UEAAXXZ",
+        "?die@Mob@@UEAAXAEBVActorDamageSource@@@Z",
+        "?updateEntitySpecificMolangVariables@Mob@@UEAAXAEAVRenderParams@@@Z",
+        "?outOfWorld@Mob@@UEAAXXZ",
+        "?_hurt@Mob@@UEAA_NAEBVActorDamageSource@@H_N1@Z",
+        "?readAdditionalSaveData@Mob@@UEAAXAEBVCompoundTag@@AEAVDataLoadHelper@@@Z",
+        "?addAdditionalSaveData@Mob@@UEAAXAEAVCompoundTag@@@Z",
+        "?_playStepSound@Mob@@UEAAXAEBVBlockPos@@AEBVBlock@@@Z",
+        "?_removeRider@Mob@@UEAAXAEBUActorUniqueID@@_N1@Z",
+        "?_onSizeUpdated@Mob@@UEAAXXZ",
+        "?knockback@Mob@@UEAAXPEAVActor@@HMMMMM@Z",
+        "?resolveDeathLoot@Mob@@UEAAXHAEBVActorDamageSource@@@Z",
+        "?spawnAnim@Mob@@UEAAXXZ",
+        "?setSleeping@Mob@@UEAAX_N@Z",
+        "?isSprinting@Mob@@UEBA_NXZ",
+        "?setSprinting@Mob@@UEAAX_N@Z",
+        "?playAmbientSound@Mob@@UEAAXXZ",
+        "?getAmbientSound@Mob@@UEAA?AW4LevelSoundEvent@@XZ",
+        "?getAmbientSoundPostponeTicks@Mob@@UEAAHXZ",
+        "?getItemInHandIcon@Mob@@UEAAPEBUTextureUVCoordinateSet@@AEBVItemStack@@H@Z",
+        "?getSpeed@Mob@@UEBAMXZ",
+        "?setSpeed@Mob@@UEAAXM@Z",
+        "?getJumpPower@Mob@@UEBAMXZ",
+        "?hurtEffects@Mob@@UEAA_NAEBVActorDamageSource@@H_N1@Z",
+        "?getMeleeWeaponDamageBonus@Mob@@UEAAHPEAV1@@Z",
+        "?getMeleeKnockbackBonus@Mob@@UEAAHXZ",
+        "?travel@Mob@@UEAAXMMM@Z",
+        "?applyFinalFriction@Mob@@UEAAXM_N@Z",
+        "?updateWalkAnim@Mob@@UEAAXXZ",
+        "?aiStep@Mob@@UEAAXXZ",
+        "?pushActors@Mob@@UEAAXXZ",
+        "?lookAt@Mob@@UEAAXPEAVActor@@MM@Z",
+        "?isLookingAtAnEntity@Mob@@UEAA_NXZ",
+        "?checkSpawnRules@Mob@@UEAA_N_N@Z",
+        "?checkSpawnObstruction@Mob@@UEBA_NXZ",
+        "?shouldDespawn@Mob@@UEBA_NXZ",
+        "?getAttackAnim@Mob@@UEAAMM@Z",
+        "?getItemUseDuration@Mob@@UEAAHXZ",
+        "?getItemUseStartupProgress@Mob@@UEAAMXZ",
+        "?getItemUseIntervalProgress@Mob@@UEAAMXZ",
+        "?getItemuseIntervalAxis@Mob@@UEAAHXZ",
+        "?getTimeAlongSwing@Mob@@UEAAHXZ",
+        "?ate@Mob@@UEAAXXZ",
+        "?getMaxHeadXRot@Mob@@UEAAMXZ",
+        "?getLastHurtByMob@Mob@@UEAAPEAV1@XZ",
+        "?setLastHurtByMob@Mob@@UEAAXPEAV1@@Z",
+        "?getLastHurtByPlayer@Mob@@UEAAPEAVPlayer@@XZ",
+        "?setLastHurtByPlayer@Mob@@UEAAXPEAVPlayer@@@Z",
+        "?getLastHurtMob@Mob@@UEAAPEAV1@XZ",
+        "?setLastHurtMob@Mob@@UEAAXPEAVActor@@@Z",
+        "?isAlliedTo@Mob@@UEAA_NPEAV1@@Z",
+        "?doHurtTarget@Mob@@UEAA_NPEAVActor@@@Z",
+        "?canBeControlledByRider@Mob@@UEAA_NXZ",
+        "?leaveCaravan@Mob@@UEAAXXZ",
+        "?joinCaravan@Mob@@UEAAXPEAV1@@Z",
+        "?hasCaravanTail@Mob@@UEBA_NXZ",
+        "?getCaravanHead@Mob@@UEBA?AUActorUniqueID@@XZ",
+        "?getArmorValue@Mob@@UEAAHXZ",
+        "?getArmorCoverPercentage@Mob@@UEBAMXZ",
+        "?hurtArmor@Mob@@UEAAXH@Z",
+        "?containerChanged@Mob@@UEAAXH@Z",
+        "?updateEquipment@Mob@@UEAAXXZ",
+        "?clearEquipment@Mob@@UEAAHXZ",
+        "?getAllArmor@Mob@@UEBA?AV?$vector@PEBVItemStack@@V?$allocator@PEBVItemStack@@@std@@@std@@XZ",
+        "?getAllArmorID@Mob@@UEBA?AV?$vector@HV?$allocator@H@std@@@std@@XZ",
+        "?getAllHand@Mob@@UEBA?AV?$vector@PEBVItemStack@@V?$allocator@PEBVItemStack@@@std@@@std@@XZ",
+        "?getAllEquipment@Mob@@UEBA?AV?$vector@PEBVItemStack@@V?$allocator@PEBVItemStack@@@std@@@std@@XZ",
+        "?getArmorTypeHash@Mob@@UEAAHXZ",
+        "?sendInventory@Mob@@UEAAX_N@Z",
+        "?sendArmor@Mob@@UEAAXXZ",
+        "?getDamageAfterMagicAbsorb@Mob@@UEAAHAEBVActorDamageSource@@H@Z",
+        "?createAIGoals@Mob@@UEAA_NXZ",
+        "?onBorn@Mob@@UEAAXAEAVActor@@0@Z",
+        "?setItemSlot@Mob@@UEAA_NW4EquipmentSlot@@AEBVItemStack@@@Z",
+        "?goDownInWater@Mob@@UEAAXXZ",
+        "?setTransitioningSitting@Mob@@UEAAX_N@Z",
+        "?attackAnimation@Mob@@UEAAXPEAVActor@@M@Z",
+        "?getAttackTime@Mob@@UEAAHXZ",
+        "?_getWalkTargetValue@Mob@@UEAAMAEBVBlockPos@@@Z",
+        "?canExistWhenDisallowMob@Mob@@UEBA_NXZ",
+        "?useNewAi@Mob@@UEBA_NXZ",
+        "?ascendLadder@Mob@@UEAAXXZ",
+        "?ascendScaffolding@Mob@@UEAAXXZ",
+        "?descendScaffolding@Mob@@UEAAXXZ",
+        "?initBodyControl@Mob@@UEAA?AV?$unique_ptr@VBodyControl@@U?$default_delete@VBodyControl@@@std@@@std@@XZ",
+        "?jumpFromGround@Mob@@UEAAXXZ",
+        "?updateAi@Mob@@UEAAXXZ",
+        "?newServerAiStep@Mob@@UEAAXXZ",
+        "?_serverAiMobStep@Mob@@UEAAXXZ",
+        "?getDamageAfterEnchantReduction@Mob@@UEAAHAEBVActorDamageSource@@H@Z",
+        "?getDamageAfterArmorAbsorb@Mob@@UEAAHAEBVActorDamageSource@@H@Z",
+        "?dropEquipment@Mob@@UEAAXXZ",
+        "?dropEquipment@Mob@@UEAAXAEBVActorDamageSource@@H@Z",
+        "?dropBags@Mob@@UEAAXXZ",
+        "?dropContainer@Mob@@UEAAXXZ",
+        "?tickDeath@Mob@@UEAAXXZ",
+        "?_endJump@Mob@@UEAAXXZ",
+        "?updateGliding@Mob@@UEAAXXZ",
+        "?_allowAscendingScaffolding@Mob@@UEBA_NXZ"
+      ]
+    },
+    {
+      "name": "Player",
+      "parent": "Mob",
+      "address": "0x2B59C90",
+      "functions": [
+        "?reloadHardcoded@Player@@UEAAXW4InitializationMethod@Actor@@AEBVVariantParameterList@@@Z",
+        "?initializeComponents@Player@@UEAAXW4InitializationMethod@Actor@@AEBVVariantParameterList@@@Z",
+        "?remove@Player@@UEAAXXZ",
+        "?getAttachPos@Player@@UEBA?AVVec3@@W4ActorLocation@@M@Z",
+        "?move@Player@@UEAAXAEBVVec3@@@Z",
+        "?teleportTo@Player@@UEAAXAEBVVec3@@_NHH@Z",
+        "?getAddPacket@Player@@UEAA?AV?$unique_ptr@VPacket@@U?$default_delete@VPacket@@@std@@@std@@XZ",
+        "?normalTick@Player@@UEAAXXZ",
+        "?rideTick@Player@@UEAAXXZ",
+        "?getRidingHeight@Player@@UEAAMXZ",
+        "?getFormattedNameTag@Player@@UEBA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ",
+        "?getAlwaysShowNameTag@Player@@UEBA_NXZ",
+        "?getCameraOffset@Player@@UEBAMXZ",
+        "?isImmobile@Player@@UEBA_NXZ",
+        "?isSleeping@Player@@UEBA_NXZ",
+        "?isShootable@Player@@UEAA_NXZ",
+        "?isBlocking@Player@@UEBA_NXZ",
+        "?isDamageBlocked@Player@@UEBA_NAEBVActorDamageSource@@@Z",
+        "?isCreativeModeAllowed@Player@@UEAA_NXZ",
+        "?attack@Player@@UEAA_NAEAVActor@@@Z",
+        "?adjustDamageAmount@Player@@UEBAXAEAH@Z",
+        "?isJumping@Player@@UEBA_NXZ",
+        "?isInvulnerableTo@Player@@UEBA_NAEBVActorDamageSource@@@Z",
+        "?actuallyHurt@Player@@UEAAXHPEBVActorDamageSource@@_N@Z",
+        "?onBounceStarted@Player@@UEAAXAEBVBlockPos@@AEBVBlock@@@Z",
+        "?feed@Player@@UEAAXH@Z",
+        "?handleEntityEvent@Player@@UEAAXW4ActorEvent@@H@Z",
+        "?getActorRendererId@Player@@UEBAAEBVHashedString@@XZ",
+        "?awardKillScore@Player@@UEAAXAEAVActor@@H@Z",
+        "?setArmor@Player@@UEAAXW4ArmorSlot@@AEBVItemStack@@@Z",
+        "?getCarriedItem@Player@@UEBAAEBVItemStack@@XZ",
+        "?setCarriedItem@Player@@UEAAXAEBVItemStack@@@Z",
+        "?setOffhandSlot@Player@@UEAAXAEBVItemStack@@@Z",
+        "?getEquippedTotem@Player@@UEBAAEBVItemStack@@XZ",
+        "?consumeTotem@Player@@UEAA_NXZ",
+        "?getEntityTypeId@Player@@UEBA?AW4ActorType@@XZ",
+        "?getPortalCooldown@Player@@UEBAHXZ",
+        "?getPortalWaitTime@Player@@UEBAHXZ",
+        "?onSynchedDataUpdate@Player@@UEAAXH@Z",
+        "?canAddRider@Player@@UEBA_NAEAVActor@@@Z",
+        "?canBePulledIntoVehicle@Player@@UEBA_NXZ",
+        "?sendMotionPacketIfNeeded@Player@@UEAAXXZ",
+        "?startSwimming@Player@@UEAAXXZ",
+        "?stopSwimming@Player@@UEAAXXZ",
+        "?getCommandPermissionLevel@Player@@UEBA?AW4CommandPermissionLevel@@XZ",
+        "?getAnimationComponent@Player@@UEAAAEAVAnimationComponent@@XZ",
+        "?useItem@Player@@UEAAXAEAVItemStack@@W4ItemUseMethod@@_N@Z",
+        "?getMapDecorationRotation@Player@@UEBAMXZ",
+        "?isWorldBuilder@Player@@UEAA_NXZ",
+        "?isCreative@Player@@UEBA_NXZ",
+        "?isAdventure@Player@@UEBA_NXZ",
+        "?add@Player@@UEAA_NAEAVItemStack@@@Z",
+        "?drop@Player@@UEAA_NAEBVItemStack@@_N@Z",
+        "?startSpinAttack@Player@@UEAAXXZ",
+        "?stopSpinAttack@Player@@UEAAXXZ",
+        "?die@Player@@UEAAXAEBVActorDamageSource@@@Z",
+        "?_hurt@Player@@UEAA_NAEBVActorDamageSource@@H_N1@Z",
+        "?readAdditionalSaveData@Player@@UEAAXAEBVCompoundTag@@AEAVDataLoadHelper@@@Z",
+        "?addAdditionalSaveData@Player@@UEAAXAEAVCompoundTag@@@Z",
+        "?_onSizeUpdated@Player@@UEAAXXZ",
+        "?setSleeping@Player@@UEAAX_N@Z",
+        "?getSpeed@Player@@UEBAMXZ",
+        "?setSpeed@Player@@UEAAXM@Z",
+        "?travel@Player@@UEAAXMMM@Z",
+        "?aiStep@Player@@UEAAXXZ",
+        "?getItemUseDuration@Player@@UEAAHXZ",
+        "?getItemUseStartupProgress@Player@@UEAAMXZ",
+        "?getItemUseIntervalProgress@Player@@UEAAMXZ",
+        "?getAllHand@Player@@UEBA?AV?$vector@PEBVItemStack@@V?$allocator@PEBVItemStack@@@std@@@std@@XZ",
+        "?getAllEquipment@Player@@UEBA?AV?$vector@PEBVItemStack@@V?$allocator@PEBVItemStack@@@std@@@std@@XZ",
+        "?sendInventory@Player@@UEAAX_N@Z",
+        "?canExistWhenDisallowMob@Player@@UEBA_NXZ",
+        "?useNewAi@Player@@UEBA_NXZ",
+        "?initBodyControl@Player@@UEAA?AV?$unique_ptr@VBodyControl@@U?$default_delete@VBodyControl@@@std@@@std@@XZ",
+        "?jumpFromGround@Player@@UEAAXXZ",
+        "?updateAi@Player@@UEAAXXZ",
+        "?dropEquipment@Player@@UEAAXXZ",
+        "?dropEquipment@Player@@UEAAXAEBVActorDamageSource@@H@Z",
+        "?updateGliding@Player@@UEAAXXZ",
+        "?prepareRegion@Player@@UEAAXAEAVChunkSource@@@Z",
+        "?destroyRegion@Player@@UEAAXXZ",
+        "?suspendRegion@Player@@UEAAXXZ",
+        "?_fireWillChangeDimension@Player@@UEAAXXZ",
+        "?_fireDimensionChanged@Player@@UEAAXXZ",
+        "?changeDimensionWithCredits@Player@@UEAAXH@Z",
+        "?tickWorld@Player@@UEAAHAEBVTick@@@Z",
+        "?frameUpdate@Player@@UEAAXAEAVFrameUpdateContextBase@@@Z",
+        "?getTickingOffsets@Player@@UEBAAEBV?$vector@VChunkPos@@V?$allocator@VChunkPos@@@std@@@std@@XZ",
+        "?moveView@Player@@UEAAXXZ",
+        "?moveSpawnView@Player@@UEAAXAEBVVec3@@@Z",
+        "?setName@Player@@UEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z",
+        "?checkMovementStats@Player@@UEAAXAEBVVec3@@@Z",
+        "?getCurrentStructureFeature@Player@@UEBA?AW4StructureFeatureType@@XZ",
+        "?isAutoJumpEnabled@Player@@UEBA_NXZ",
+        "?respawn@Player@@UEAAXXZ",
+        "?resetRot@Player@@UEAAXXZ",
+        "?resetPos@Player@@UEAAX_N@Z",
+        "?isInTrialMode@Player@@UEAA_NXZ",
+        "?hasResource@Player@@UEAA_NH@Z",
+        "?completeUsingItem@Player@@UEAAXXZ",
+        "?setPermissions@Player@@UEAAXW4CommandPermissionLevel@@@Z",
+        "?startCrafting@Player@@UEAAXAEBVBlockPos@@_N@Z",
+        "?startStonecutting@Player@@UEAAXAEBVBlockPos@@@Z",
+        "?startDestroying@Player@@UEAAXXZ",
+        "?stopDestroying@Player@@UEAAXXZ",
+        "?openContainer@Player@@UEAAXAEBUActorUniqueID@@@Z",
+        "?openContainer@Player@@UEAAXAEBVBlockPos@@@Z",
+        "?openFurnace@Player@@UEAAXAEBVBlockPos@@@Z",
+        "?openBlastFurnace@Player@@UEAAXAEBVBlockPos@@@Z",
+        "?openSmoker@Player@@UEAAXAEBVBlockPos@@@Z",
+        "?openEnchanter@Player@@UEAAXAEBVBlockPos@@@Z",
+        "?openAnvil@Player@@UEAAXAEBVBlockPos@@@Z",
+        "?openGrindstone@Player@@UEAAXAEBVBlockPos@@@Z",
+        "?openBrewingStand@Player@@UEAAXAEBVBlockPos@@@Z",
+        "?openHopper@Player@@UEAAXAEBUActorUniqueID@@@Z",
+        "?openHopper@Player@@UEAAXAEBVBlockPos@@@Z",
+        "?openDispenser@Player@@UEAAXAEBVBlockPos@@_N@Z",
+        "?openBeacon@Player@@UEAAXAEBVBlockPos@@@Z",
+        "?openPortfolio@Player@@UEAAXXZ",
+        "?openBook@Player@@UEAAXH_NHPEAVBlockActor@@@Z",
+        "?openCommandBlock@Player@@UEAAXAEBVBlockPos@@@Z",
+        "?openCommandBlockMinecart@Player@@UEAAXAEBUActorUniqueID@@@Z",
+        "?openHorseInventory@Player@@UEAAXAEBUActorUniqueID@@@Z",
+        "?openTrading@Player@@UEAAXAEBUActorUniqueID@@_N@Z",
+        "?canOpenContainerScreen@Player@@UEAA_NXZ",
+        "?openChalkboard@Player@@UEAAXAEAVChalkboardBlockActor@@_N@Z",
+        "?openNpcInteractScreen@Player@@UEAAXAEAVActor@@@Z",
+        "?openInventory@Player@@UEAAXXZ",
+        "?openStructureEditor@Player@@UEAAXAEBVBlockPos@@@Z",
+        "?openLabTable@Player@@UEAAXAEBVBlockPos@@@Z",
+        "?openElementConstructor@Player@@UEAAXAEBVBlockPos@@@Z",
+        "?openCompoundCreator@Player@@UEAAXAEBVBlockPos@@@Z",
+        "?openMaterialReducer@Player@@UEAAXAEBVBlockPos@@@Z",
+        "?openLoom@Player@@UEAAXAEBVBlockPos@@@Z",
+        "?openStonecutter@Player@@UEAAXAEBVBlockPos@@@Z",
+        "?openCartographyTable@Player@@UEAAXAEBVBlockPos@@@Z",
+        "?displayChatMessage@Player@@UEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z",
+        "?displayClientMessage@Player@@UEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z",
+        "?displayLocalizableMessage@Player@@UEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@3@@Z",
+        "?displayTextObjectMessage@Player@@UEAAXAEBVTextObjectRoot@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@1@Z",
+        "?displayWhisperMessage@Player@@UEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@000@Z",
+        "?startSleepInBed@Player@@UEAA?AW4BedSleepingResult@@AEBVBlockPos@@@Z",
+        "?stopSleepInBed@Player@@UEAAX_N0@Z",
+        "?canStartSleepInBed@Player@@UEAA_NXZ",
+        "?getSleepTimer@Player@@UEBAHXZ",
+        "?getPreviousTickSleepTimer@Player@@UEBAHXZ",
+        "?openSign@Player@@UEAAXAEBVBlockPos@@@Z",
+        "?playEmote@Player@@UEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@_N@Z",
+        "?isLocalPlayer@Player@@UEBA_NXZ",
+        "?isHostingPlayer@Player@@UEBA_NXZ",
+        "?isLoading@Player@@UEBA_NXZ",
+        "?isPlayerInitialized@Player@@UEBA_NXZ",
+        "?stopLoading@Player@@UEAAXXZ",
+        "?registerTrackedBoss@Player@@UEAAXUActorUniqueID@@@Z",
+        "?unRegisterTrackedBoss@Player@@UEAAXUActorUniqueID@@@Z",
+        "?setPlayerGameType@Player@@UEAAXW4GameType@@@Z",
+        "?_crit@Player@@UEAAXAEAVActor@@@Z",
+        "?getEventing@Player@@UEBAPEAVIMinecraftEventing@@XZ",
+        "?getUserId@Player@@UEBAIXZ",
+        "?sendEventPacket@Player@@UEBAXAEAVEventPacket@@@Z",
+        "?addExperience@Player@@UEAAXH@Z",
+        "?addLevels@Player@@UEAAXH@Z",
+        "?setContainerData@Player@@UEAAXAEAVIContainerManager@@HH@Z",
+        "?slotChanged@Player@@UEAAXAEAVIContainerManager@@HAEBVItemStack@@1_N@Z",
+        "?inventoryChanged@Player@@UEAAXAEAVContainer@@HAEBVItemStack@@1@Z",
+        "?refreshContainer@Player@@UEAAXAEAVIContainerManager@@@Z",
+        "?deleteContainerManager@Player@@UEAAXXZ",
+        "?setFieldOfViewModifier@Player@@UEAAXM@Z",
+        "?isPositionRelevant@Player@@UEAA_NHAEBVBlockPos@@@Z",
+        "?isEntityRelevant@Player@@UEAA_NAEBVActor@@@Z",
+        "?isTeacher@Player@@UEBA_NXZ",
+        "?onSuspension@Player@@UEAAXXZ",
+        "?onLinkedSlotsChanged@Player@@UEAAXXZ",
+        "?startCooldown@Player@@UEAAXPEBVItem@@@Z",
+        "?getItemCooldownLeft@Player@@UEBAHW4CooldownType@@@Z",
+        "?isItemInCooldown@Player@@UEBA_NW4CooldownType@@@Z",
+        "?sendInventoryTransaction@Player@@UEBAXAEBVInventoryTransaction@@@Z",
+        "?sendComplexInventoryTransaction@Player@@UEBAXV?$unique_ptr@VComplexInventoryTransaction@@U?$default_delete@VComplexInventoryTransaction@@@std@@@std@@@Z",
+        "?sendNetworkPacket@Player@@UEBAXAEAVPacket@@@Z",
+        "?getPlayerEventCoordinator@Player@@UEAAAEAVPlayerEventCoordinator@@XZ",
+        "?getMoveInputHandler@Player@@UEAAPEAVMoveInputHandler@@XZ",
+        "?getInputMode@Player@@UEBA?AW4InputMode@@XZ",
+        "?getPlayMode@Player@@UEBA?AW4ClientPlayMode@@XZ",
+        "?reportMovementTelemetry@Player@@UEAAXW4MovementEventType@@@Z",
+        "?onMovePlayerPacketNormal@Player@@UEAAXAEBVVec3@@AEBVVec2@@M@Z"
+      ]
+    },
+    {
+      "name": "Monster",
+      "parent": "Mob",
+      "address": "0x2B4C488",
+      "functions": [
+        "?normalTick@Monster@@UEAAXXZ",
+        "?canExistInPeaceful@Monster@@UEBA_NXZ",
+        "?findAttackTarget@Monster@@UEAAPEAVActor@@XZ",
+        "?_hurt@Monster@@UEAA_NAEBVActorDamageSource@@H_N1@Z",
+        "?readAdditionalSaveData@Monster@@UEAAXAEBVCompoundTag@@AEAVDataLoadHelper@@@Z",
+        "?addAdditionalSaveData@Monster@@UEAAXAEAVCompoundTag@@@Z",
+        "?aiStep@Monster@@UEAAXXZ",
+        "?checkSpawnRules@Monster@@UEAA_N_N@Z",
+        "?shouldDespawn@Monster@@UEBA_NXZ",
+        "?_getWalkTargetValue@Monster@@UEAAMAEBVBlockPos@@@Z",
+        "?isDarkEnoughToSpawn@Monster@@UEBA_NXZ"
+      ]
+    },
+    {
+      "name": "Slime",
+      "parent": "Monster",
+      "address": "0x2B51040",
+      "functions": [
+        "?reloadHardcoded@Slime@@UEAAXW4InitializationMethod@Actor@@AEBVVariantParameterList@@@Z",
+        "?remove@Slime@@UEAAXXZ",
+        "?normalTick@Slime@@UEAAXXZ",
+        "?getShadowRadius@Slime@@UEBAMXZ",
+        "?playerTouch@Slime@@UEAAXAEAVPlayer@@@Z",
+        "?findAttackTarget@Slime@@UEAAPEAVActor@@XZ",
+        "?onSynchedDataUpdate@Slime@@UEAAXH@Z",
+        "?readAdditionalSaveData@Slime@@UEAAXAEBVCompoundTag@@AEAVDataLoadHelper@@@Z",
+        "?addAdditionalSaveData@Slime@@UEAAXAEAVCompoundTag@@@Z",
+        "?aiStep@Slime@@UEAAXXZ",
+        "?checkSpawnRules@Slime@@UEAA_N_N@Z",
+        "?_getWalkTargetValue@Slime@@UEAAMAEBVBlockPos@@@Z",
+        "?useNewAi@Slime@@UEBA_NXZ",
+        "?canDealDamage@Slime@@UEAA_NXZ",
+        "?getSquishSound@Slime@@UEAA?AW4LevelSoundEvent@@XZ",
+        "?setSlimeSize@Slime@@UEAAXH@Z",
+        "?doPlayJumpSound@Slime@@UEAA_NXZ",
+        "?doPlayLandSound@Slime@@UEAA_NXZ",
+        "?playJumpSound@Slime@@UEAAXXZ",
+        "?playLandSound@Slime@@UEAAXXZ",
+        "?decreaseSquish@Slime@@UEAAXXZ",
+        "?createChild@Slime@@UEAA?AV?$unique_ptr@VSlime@@U?$default_delete@VSlime@@@std@@@std@@H@Z"
+      ]
+    },
+    {
+      "name": "Throwable",
+      "parent": "Actor",
+      "address": "0x2B60730",
+      "functions": [
+        "?initializeComponents@Throwable@@UEAAXW4InitializationMethod@Actor@@AEBVVariantParameterList@@@Z",
+        "?lerpTo@Throwable@@UEAAXAEBVVec3@@AEBVVec2@@H@Z",
+        "?lerpMotion@Throwable@@UEAAXAEBVVec3@@@Z",
+        "?normalTick@Throwable@@UEAAXXZ",
+        "?getShadowHeightOffs@Throwable@@UEAAMXZ",
+        "?getSourceUniqueID@Throwable@@UEBA?AUActorUniqueID@@XZ",
+        "?canMakeStepSound@Throwable@@UEBA_NXZ",
+        "?readAdditionalSaveData@Throwable@@UEAAXAEBVCompoundTag@@AEAVDataLoadHelper@@@Z",
+        "?addAdditionalSaveData@Throwable@@UEAAXAEAVCompoundTag@@@Z",
+        "?getThrowPower@Throwable@@UEAAMXZ",
+        "?stopUponGroundCollision@Throwable@@UEBA_NXZ",
+        "?getThrowUpAngleOffset@Throwable@@UEAAMXZ",
+        "?getGravity@Throwable@@UEAAMXZ",
+        "?getParticleType@Throwable@@UEAA?AW4ParticleType@@XZ",
+        "?onHit@Throwable@@UEAAXAEBVHitResult@@@Z"
+      ]
+    },
+    {
+      "name": "Container",
+      "address": "0x2B64268",
+      "functions": [
+        "??1Container@@UEAA@XZ",
+        "?init@Container@@UEAAXXZ",
+        "?addContentChangeListener@Container@@UEAAXPEAVContainerContentChangeListener@@@Z",
+        "?removeContentChangeListener@Container@@UEAAXPEAVContainerContentChangeListener@@@Z",
+        "?getItem@Container@@UEBAAEBVItemStack@@H@Z",
+        "?hasRoomForItem@Container@@UEAA_NAEBVItemStack@@@Z",
+        "?addItem@Container@@UEAAXAEAVItemStack@@@Z",
+        "?addItemToFirstEmptySlot@Container@@UEAA_NAEAVItemStack@@@Z",
+        "?setItem@Container@@UEAAXHAEBVItemStack@@@Z",
+        "?removeItem@Container@@UEAAXHH@Z",
+        "?removeAllItems@Container@@UEAAXXZ",
+        "?dropContents@Container@@UEAAXAEAVBlockSource@@AEBVVec3@@_N@Z",
+        "?getContainerSize@Container@@UEBAHXZ",
+        "?getMaxStackSize@Container@@UEBAHXZ",
+        "?startOpen@Container@@UEAAXAEAVPlayer@@@Z",
+        "?stopOpen@Container@@UEAAXAEAVPlayer@@@Z",
+        "?getSlotCopies@Container@@UEBA?AV?$vector@VItemStack@@V?$allocator@VItemStack@@@std@@@std@@XZ",
+        "?getSlots@Container@@UEBA?BV?$vector@PEBVItemStack@@V?$allocator@PEBVItemStack@@@std@@@std@@XZ",
+        "?getItemCount@Container@@UEAAHAEBVItemStack@@@Z",
+        "?getItemCount@Container@@UEAAHAEBVItemDescriptor@@@Z",
+        "?findFirstSlotForItem@Container@@UEBAHAEBVItemStack@@@Z",
+        "?canPushInItem@Container@@UEBA_NAEAVBlockSource@@HHAEBVItemInstance@@@Z",
+        "?canPullOutItem@Container@@UEBA_NAEAVBlockSource@@HHAEBVItemInstance@@@Z",
+        "?setContainerChanged@Container@@UEAAXH@Z",
+        "?setContainerMoved@Container@@UEAAXXZ",
+        "?setCustomName@Container@@UEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z",
+        "?hasCustomName@Container@@UEBA_NXZ",
+        "?readAdditionalSaveData@Container@@UEAAXAEBVCompoundTag@@@Z",
+        "?addAdditionalSaveData@Container@@UEAAXAEAVCompoundTag@@@Z",
+        "?createTransactionContext@Container@@UEAAXV?$function@$$A6AXAEAVContainer@@HAEBVItemStack@@1@Z@std@@V?$function@$$A6AXXZ@3@@Z",
+        "?triggerTransactionChange@Container@@UEAAXHAEBVItemStack@@0@Z"
+      ]
+    },
+    {
+      "name": "Level",
+      "address": "0x2BCF460",
+      "functions": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "?addEntity@Level@@UEAAPEAVActor@@AEAVBlockSource@@V?$unique_ptr@VActor@@U?$default_delete@VActor@@@std@@@std@@@Z"
+      ]
+    },
+    {
+      "name": "BaseActorRenderer",
+      "address": "0x2ACA290",
+      "functions": [
+        "??1BaseActorRenderer@@UEAA@XZ",
+        "?_getOverlayColor@ActorShaderManager@@UEBA?AVColor@@AEAVActor@@M@Z"
+      ]
+    },
+    {
+      "name": "BlockActorRenderer",
+      "address": "0x2AC9718",
+      "functions": [
+        "",
+        "",
+        "",
+        "",
+        "?extractText@BlockActorRenderer@@UEAA?AV?$vector@VNameTagRenderObject@@V?$allocator@VNameTagRenderObject@@@std@@@std@@AEAVTessellator@@AEAVBlockActor@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@3@HVVec3@@_N@Z"
+      ]
+    },
+    {
+      "name": "ItemSpriteRenderer",
+      "parent": "BaseActorRenderer",
+      "address": "0x2AC98E0",
+      "functions": [
+        "?render@ItemSpriteRenderer@@UEAAXAEAVBaseActorRenderContext@@AEAVActorRenderData@@@Z",
+        "?renderDebug@ActorRenderer@@UEAAXAEAVBaseActorRenderContext@@AEAVActorRenderData@@@Z",
+        "?renderEffects@ActorRenderer@@UEAAXAEAVBaseActorRenderContext@@AEAVActorRenderData@@@Z",
+        "?renderTrading@ActorRenderer@@UEAAXAEAVBaseActorRenderContext@@AEAVActorRenderData@@M@Z",
+        "?renderFlame@ActorRenderer@@UEAAXAEAVBaseActorRenderContext@@AEAVActorRenderData@@@Z",
+        "?renderLeash@ActorRenderer@@UEAAXAEAVBaseActorRenderContext@@AEAVActorRenderData@@@Z",
+        "?renderWaterHole@ActorRenderer@@UEAAXAEAVBaseActorRenderContext@@AEAVActorRenderData@@@Z",
+        "?addAdditionalRenderingIfNeeded@ActorRenderer@@UEAAXAEAVTextureGroup@mce@@@Z",
+        "?getRenderBounds@ActorRenderer@@UEBA?AVAABB@@AEBVActor@@@Z",
+        "?getLeashOffset@ActorRenderer@@UEAAPEAXAEAVActor@@MMM_N1@Z",
+        "?getIcon@ItemSpriteRenderer@@UEBAAEBUTextureUVCoordinateSet@@AEAVActor@@@Z",
+        "?isGlint@ItemSpriteRenderer@@UEBA_NAEBVActor@@@Z"
+      ]
+    },
+    {
+      "name": "BlockActor",
+      "address": "0x2B85A08",
+      "functions": [
+        "",
+        "?load@BlockActor@@UEAAXAEAVLevel@@AEBVCompoundTag@@AEAVDataLoadHelper@@@Z",
+        "?save@BlockActor@@UEBA_NAEAVCompoundTag@@@Z",
+        "?saveItemInstanceData@BlockActor@@UEAA_NAEAVCompoundTag@@@Z",
+        "?saveBlockData@BlockActor@@UEBAXAEAVCompoundTag@@AEAVBlockSource@@@Z",
+        "?loadBlockData@BlockActor@@UEAAXAEBVCompoundTag@@AEAVBlockSource@@AEAVDataLoadHelper@@@Z",
+        "?onCustomTagLoadDone@BlockActor@@UEAAXAEAVBlockSource@@@Z",
+        "?tick@BlockActor@@UEAAXAEAVBlockSource@@@Z",
+        "?isFinished@BlockActor@@UEAA_NXZ",
+        "?onChanged@BlockActor@@UEAAXAEAVBlockSource@@@Z",
+        "?isMovable@BlockActor@@UEAA_NAEAVBlockSource@@@Z",
+        "?isCustomNameSaved@BlockActor@@UEAA_NXZ",
+        "?getUpdatePacket@BlockActor@@UEAA?AV?$unique_ptr@VPacket@@U?$default_delete@VPacket@@@std@@@std@@AEAVBlockSource@@@Z",
+        "?onPlace@BlockActor@@UEAAXAEAVBlockSource@@@Z",
+        "?onMove@BlockActor@@UEAAXXZ",
+        "?onRemoved@BlockActor@@UEAAXAEAVBlockSource@@@Z",
+        "?triggerEvent@BlockActor@@UEAAXHH@Z",
+        "?clearCache@BlockActor@@UEAAXXZ",
+        "?onNeighborChanged@BlockActor@@UEAAXAEAVBlockSource@@AEBVBlockPos@@@Z",
+        "?getShadowRadius@BlockActor@@UEBAMAEAVBlockSource@@@Z",
+        "?hasAlphaLayer@BlockActor@@UEBA_NXZ",
+        "?getCrackEntity@BlockActor@@UEAAPEAV1@AEAVBlockSource@@AEBVBlockPos@@@Z",
+        "?getDebugText@BlockActor@@UEAAXAEAV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@AEBVBlockPos@@@Z",
+        "?getCustomName@BlockActor@@UEBAAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ",
+        "?getFilteredCustomName@BlockActor@@UEAAAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBVUIProfanityContext@@@Z",
+        "?getName@BlockActor@@UEBA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ",
+        "?getImmersiveReaderText@BlockActor@@UEAA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAVBlockSource@@@Z",
+        "?getRepairCost@BlockActor@@UEBAHXZ",
+        "?getOwningPiston@BlockActor@@UEAAPEAVPistonBlockActor@@AEAVBlockSource@@@Z",
+        "?getContainer@BlockActor@@UEAAPEAVContainer@@XZ",
+        "?getDeletionDelayTimeSeconds@BlockActor@@UEBAMXZ",
+        "?onChunkLoaded@BlockActor@@UEAAXAEAVLevelChunk@@@Z",
+        "?onChunkUnloaded@BlockActor@@UEAAXAEAVLevelChunk@@@Z",
+        "?_onUpdatePacket@BlockActor@@UEAAXAEBVCompoundTag@@AEAVBlockSource@@@Z",
+        "?_playerCanUpdate@BlockActor@@UEBA_NAEBVPlayer@@@Z"
+      ]
+    }
+  ],
 
-    "functions": [
-        {
-            "name": "",
-            "address": []
-        }
-    ]
+  "includes": [
+    "minecraft/block/BlockState.h",
+    "minecraft/block/VanillaBlockRegistry.h",
+    "minecraft/block/VanillaBlockStates.h",
+    "minecraft/block/VanillaBlockTypeRegistry.h",
+    "minecraft/block/BlockTypeRegistry.h",
+    "minecraft/item/VanillaItemTiers.h",
+    "minecraft/item/ItemRegistry.h",
+    "minecraft/block/BlockTypeRegistry.h",
+    "minecraft/world/WorldSystems.h",
+    "minecraft/item/Item.h",
+    "minecraft/item/VanillaItems.h",
+    "minecraft/actor/ActorType.h",
+    "minecraft/actor/ProjectileFactory.h",
+    "minecraft/actor/ActorFactory.h",
+    "minecraft/actor/Attributes.h"
+  ],
+
+  "variables": {
+    "Block*& VanillaBlocks::mGrass": "0x3050A98",
+    "Block*& VanillaBlocks::mDirt": "0x3051770",
+    "Block*& VanillaBlocks::mCobblestone": "0x3051570",
+    "Block*& VanillaBlocks::mSapling": "0x30514D8",
+    "Block*& VanillaBlocks::mSand": "0x3050B58",
+    "Block*& VanillaBlocks::mGravel": "0x3050B60",
+    "Block*& VanillaBlocks::mLeaves": "0x30515D0",
+    "Block*& VanillaBlocks::mCactus": "0x3050B30",
+    "Block*& VanillaBlocks::mReeds": "0x3050AA0",
+    "Block*& VanillaBlocks::mNetherrack": "0x3051478",
+    "Block*& VanillaBlocks::mMycelium": "0x3050B50",
+    "Block*& VanillaBlocks::mEndStone": "0x3051470",
+    "Block*& VanillaBlocks::mCarrotCrop": "0x30516A8",
+    "Block*& VanillaBlocks::mPotatoCrop": "0x30516B0",
+    "Block*& VanillaBlocks::mLeaves2": "0x30510F0",
+    "WeakPtr<BlockLegacy>& VanillaBlockTypes::mGrass": "0x3061468",
+    "WeakPtr<BlockLegacy>& VanillaBlockTypes::mDirt": "0x3061470",
+    "WeakPtr<BlockLegacy>& VanillaBlockTypes::mCobblestone": "0x3061478",
+    "WeakPtr<BlockLegacy>& VanillaBlockTypes::mSand": "0x30614B8",
+    "WeakPtr<BlockLegacy>& VanillaBlockTypes::mGravel": "0x30614C0",
+    "WeakPtr<BlockLegacy>& VanillaBlockTypes::mLeaves": "0x30614E8",
+    "WeakPtr<BlockLegacy>& VanillaBlockTypes::mMycelium": "0x30617F0",
+    "WeakPtr<BlockLegacy>& VanillaBlockTypes::mLeaves2": "0x30619E0",
+    "WeakPtr<BlockLegacy>& VanillaBlockTypes::mTopSnow": "0x30616E0",
+    "WeakPtr<BlockLegacy>& BedrockBlockTypes::mAir": "0x30613D0",
+    "ItemState& VanillaStates::SaplingType": "0x30633C0",
+    "ItemState& VanillaStates::LiquidDepth": "0x3062BA0",
+    "ItemState& VanillaStates::OldLeafType": "0x3063A50",
+    "ItemState& VanillaStates::NewLeafType": "0x3063AA0",
+    "ItemState& VanillaStates::UpdateBit": "0x3063140",
+    "ItemState::StateListNode*& ItemState::StateListNode::mHead": "0x3050980",
+    "WeakPtr<Item>& VanillaItems::mBucket": "0x3060748",
+    "WeakPtr<Item>& VanillaItems::mGoldIngot": "0x3060548",
+    "WeakPtr<Item>& VanillaItems::mIronIngot": "0x3060540",
+    "WeakPtr<Item>& VanillaItems::mShears": "0x3060990",
+    "WeakPtr<Item>& VanillaItems::mString": "0x30605F0",
+    "Item::Tier& VanillaItemTiers::WOOD": "0x2A39988",
+    "Item::Tier& VanillaItemTiers::STONE": "0x2A39A20",
+    "Item::Tier& VanillaItemTiers::IRON": "0x2A39658",
+    "Item::Tier& VanillaItemTiers::DIAMOND": "0x2A39A38",
+    "Item::Tier& VanillaItemTiers::GOLD": "0x2A39A50",
+    "std::vector<SharedPtr<Item>>& ItemRegistry::mItemRegistry": "0x3060118",
+    "short& ItemRegistry::mMaxItemID": "0x30507BC",
+    "std::unordered_map<std::string, SharedPtr<BlockLegacy>>& BlockTypeRegistry::mBlockLookupMap": "0x3061390",
+    "bool& Item::mInCreativeGroup": "0x30507BA",
+    "std::vector<ItemInstance>& Item::mCreativeList": "0x3060068",
+    "std::vector<std::vector<ItemInstance>>& Item::mCreativeGroups": "0x30600E8",
+    "std::vector<CreativeGroupInfo>& Item::mCreativeGroupInfo": "0x3060100",
+    "bool& WorldSystems::mInitialized": "0x30507BE",
+    "std::unordered_map<ActorType, ActorMapping>& ENTITY_TYPE_MAP": "0x305C590",
+    "std::unordered_map<std::string, std::function<std::unique_ptr<OnHitSubcomponent>()>>& ProjectileFactory::mSubcomponentMap": "0x305DD20",
+    "std::unordered_map<std::string, ActorFactoryData>& _factoryFunctions": "0x305C460",
+    "Attribute& SharedAttributes::HEALTH": "0x305DDA0"
+  },
+
+  "functions": [
+    {
+      "name": "??0BowItem@@QEAA@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@Z",
+      "address": "0x1516F60"
+    },
+    {
+      "name": "??0Item@@QEAA@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@F@Z",
+      "address": "0x15614E0"
+    },
+    {
+      "name": "??0BlockPlanterItem@@QEAA@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@HAEBVBlock@@_N@Z",
+      "address": "0x1515440"
+    },
+    {
+      "name": "??0DiggerItem@@IEAA@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@HHAEBVTier@Item@@AEBV?$vector@PEBVBlock@@V?$allocator@PEBVBlock@@@std@@@2@@Z",
+      "address": "0x1547810"
+    },
+    {
+      "name": "??0BlockItem@@QEAA@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@Z",
+      "address": "0x1514950"
+    },
+    {
+      "name": "??0BucketItem@@QEAA@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@Z",
+      "address": "0x15171C0"
+    },
+    {
+      "name": "?beginCreativeGroup@Item@@SAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAV1@FPEBVCompoundTag@@@Z",
+      "address": "0x1560AB0"
+    },
+    {
+      "name": "?beginCreativeGroup@Item@@SAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEBVBlock@@PEBVCompoundTag@@@Z",
+      "address": "0x1560A60"
+    },
+    {
+      "name": "?addCreativeItem@Item@@SAXPEAV1@F@Z",
+      "address": "0x1560C90"
+    },
+    {
+      "name": "?addCreativeItem@Item@@SAXAEBVBlock@@@Z",
+      "address": "0x1560BD0"
+    },
+    {
+      "name": "?getTextureItem@Item@@SAAEBVTextureAtlasItem@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z",
+      "address": "0x15656C0"
+    },
+    {
+      "name": "?getIconTextureUVSet@Item@@SAAEBUTextureUVCoordinateSet@@AEBVTextureAtlasItem@@HH@Z",
+      "address": "0x1565640"
+    },
+    {
+      "name": "?getTextureUVCoordinateSet@Item@@SA?AUTextureUVCoordinateSet@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@Z",
+      "address": "0x15654E0"
+    },
+    {
+      "name": "?getCommandName@Item@@QEBAAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ",
+      "address": "0x1565810"
+    },
+    {
+      "name": "?_helpChangeInventoryItemInPlace@Item@@QEBAXAEAVActor@@AEAVItemStack@@1W4ItemAcquisitionMethod@@@Z",
+      "address": "0x1561210"
+    },
+    {
+      "name": "??0ItemStackBase@@IEAA@XZ",
+      "address": "0x156E290"
+    },
+    {
+      "name": "??0ItemStackBase@@IEAA@AEBVItem@@HH@Z",
+      "address": "0x156E6C0"
+    },
+    {
+      "name": "??0ItemStackBase@@IEAA@AEBVBlockLegacy@@H@Z",
+      "address": "0x156E360"
+    },
+    {
+      "name": "??0ItemStackBase@@IEAA@AEBVBlock@@HPEBVCompoundTag@@@Z",
+      "address": "0x156E3F0"
+    },
+    {
+      "name": "??0ItemStackBase@@IEAA@AEBV0@@Z",
+      "address": "0x156E7D0"
+    },
+    {
+      "name": "??4ItemStackBase@@IEAAAEAV0@AEBV0@@Z",
+      "address": "0x1571D80"
+    },
+    {
+      "name": "??0ItemStack@@QEAA@XZ",
+      "address": "0x156D210"
+    },
+    {
+      "name": "??0ItemStack@@QEAA@AEBVItem@@H@Z",
+      "address": "0x156D270"
+    },
+    {
+      "name": "??0ItemStack@@QEAA@AEBVBlockLegacy@@H@Z",
+      "address": "0x156D240"
+    },
+    {
+      "name": "??0ItemInstance@@QEAA@XZ",
+      "address": "0x1568AD0"
+    },
+    {
+      "name": "??0ItemInstance@@QEAA@AEBVItem@@HH@Z",
+      "address": "0x1568C00"
+    },
+    {
+      "name": "??0ItemInstance@@QEAA@AEBVBlockLegacy@@H@Z",
+      "address": "0x1568B40"
+    },
+    {
+      "name": "??0ItemInstance@@QEAA@AEBVBlock@@HPEBVCompoundTag@@@Z",
+      "address": "0x1568B70"
+    },
+    {
+      "name": "??0ItemInstance@@QEAA@AEBV0@@Z",
+      "address": "0x1568C30"
+    },
+    {
+      "name": "?set@ItemStackBase@@QEAAXH@Z",
+      "address": "0x156EF70"
+    },
+    {
+      "name": "?getItem@ItemStackBase@@QEBAPEBVItem@@XZ",
+      "address": "0x01B9250"
+    },
+    {
+      "name": "?getAuxValue@ItemStackBase@@QEBAFXZ",
+      "address": "0x15700E0"
+    },
+    {
+      "name": "?matchesItem@ItemStackBase@@QEBA_NAEBV1@@Z",
+      "address": "0x1571BF0"
+    },
+    {
+      "name": "?getBlockEntity@BlockSource@@QEAAPEAVBlockActor@@AEBVBlockPos@@@Z",
+      "address": "0x177ADF0"
+    },
+    {
+      "name": "?getBiome@BlockSource@@QEAAAEAVBiome@@AEBVBlockPos@@@Z",
+      "address": "0x1780830"
+    },
+    {
+      "name": "?addToTickingQueue@BlockSource@@QEAAXAEBVBlockPos@@AEBVBlock@@HH@Z",
+      "address": "0x1778AB0"
+    },
+    {
+      "name": "?getBlock@BlockSource@@QEBAAEBVBlock@@AEBVBlockPos@@@Z",
+      "address": "0x1779710"
+    },
+    {
+      "name": "?getExtraBlock@BlockSource@@QEBAAEBVBlock@@AEBVBlockPos@@@Z",
+      "address": "0x1779E90"
+    },
+    {
+      "name": "?getLiquidBlock@BlockSource@@QEBAAEBVBlock@@AEBVBlockPos@@@Z",
+      "address": "0x1779E20"
+    },
+    {
+      "name": "?setBlock@BlockSource@@QEAA_NAEBVBlockPos@@AEBVBlock@@HPEBUActorBlockSyncMessage@@@Z",
+      "address": "0x17797E0"
+    },
+    {
+      "name": "?setExtraBlock@BlockSource@@QEAA_NAEBVBlockPos@@AEBVBlock@@H@Z",
+      "address": "0x1779BD0"
+    },
+    {
+      "name": "?removeBlock@BlockSource@@QEAA_NAEBVBlockPos@@@Z",
+      "address": "0x177ADB0"
+    },
+    {
+      "name": "?checkBlockPermissions@BlockSource@@QEAA_NAEAVActor@@AEBVBlockPos@@EAEBVItemStack@@_N@Z",
+      "address": "0x1778690"
+    },
+    {
+      "name": "?fireBlockChanged@BlockSource@@QEAAXAEBVBlockPos@@IAEBVBlock@@1HPEBUActorBlockSyncMessage@@@Z",
+      "address": "0x1780260"
+    },
+    {
+      "name": "?getLegacyBlock@Block@@QEBAAEBVBlockLegacy@@XZ",
+      "address": "0x00E9920"
+    },
+    {
+      "name": "??0BlockLegacy@@QEAA@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@HAEBVMaterial@@@Z",
+      "address": "0x164EC50"
+    },
+    {
+      "name": "?getBlockItemId@BlockLegacy@@QEBAFXZ",
+      "address": "0x1651D90"
+    },
+    {
+      "name": "?tryGetStateFromLegacyData@BlockLegacy@@QEBAPEBVBlock@@G@Z",
+      "address": "0x164F4B0"
+    },
+    {
+      "name": "?popResource@BlockLegacy@@QEBAPEAVItemActor@@AEAVBlockSource@@AEBVBlockPos@@AEBVItemInstance@@@Z",
+      "address": "0x1650520"
+    },
+    {
+      "name": "?getDefaultState@BlockLegacy@@QEBAAEAVBlock@@XZ",
+      "address": "0x1651D80"
+    },
+    {
+      "name": "?registerItem@ItemRegistry@@SAXV?$SharedPtr@VItem@@@@@Z",
+      "address": "0x15692F0"
+    },
+    {
+      "name": "?getItem@ItemRegistry@@SA?AV?$WeakPtr@VItem@@@@F@Z",
+      "address": "0x1569180"
+    },
+    {
+      "name": "?lookupByName@ItemRegistry@@SA?AV?$WeakPtr@VItem@@@@AEAH0AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z",
+      "address": "0x156B410"
+    },
+    {
+      "name": "?lookupByName@ItemRegistry@@SA?AV?$WeakPtr@VItem@@@@AEAHAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z",
+      "address": "0x156AA50"
+    },
+    {
+      "name": "?registerItems@VanillaItems@@SAX_N@Z",
+      "address": "0x1594D20"
+    },
+    {
+      "name": "?initCreativeCategories@VanillaItems@@SAXXZ",
+      "address": "0x15A3320"
+    },
+    {
+      "name": "?initCreativeItemsCallback@VanillaItems@@SAXPEAVActorInfoRegistry@@PEAVBlockDefinitionGroup@@_N@Z",
+      "address": "0x15A45F0"
+    },
+    {
+      "name": "?initClientData@VanillaItems@@SAXXZ",
+      "address": "0x15A01D0"
+    },
+    {
+      "name": "?_genRandInt32@Random@Core@@AEAAIXZ",
+      "address": "0x01AC370"
+    },
+    {
+      "name": "?nextFloat@Random@@QEAAMXZ",
+      "address": "0x0620D10"
+    },
+    {
+      "name": "??0Throwable@@QEAA@PEAVActorDefinitionGroup@@AEBUActorDefinitionIdentifier@@@Z",
+      "address": "0x146CCF0"
+    },
+    {
+      "name": "?getSelectedItem@Player@@QEBAAEBVItemStack@@XZ",
+      "address": "0x1459C30"
+    },
+    {
+      "name": "?causeFoodExhaustion@Player@@QEAAXM@Z",
+      "address": "0x145BD20"
+    },
+    {
+      "name": "?getEnchantLevel@EnchantUtils@@SAHW4Type@Enchant@@AEBVItemStackBase@@@Z",
+      "address": "0x15506F0"
+    },
+    {
+      "name": "?hasEnchant@EnchantUtils@@SA_NW4Type@Enchant@@AEBVItemStackBase@@@Z",
+      "address": "0x15507A0"
+    },
+    {
+      "name": "?toLower@Util@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV23@@Z",
+      "address": "0x0E52DA0"
+    },
+    {
+      "name": "?toUpper@Util@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV23@@Z",
+      "address": "0x0E52E40"
+    },
+    {
+      "name": "?u64FromString@Util@@YA_KAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z",
+      "address": "0x0E53800"
+    },
+    {
+      "name": "?registerBlockGraphics@BlockGraphics@@SAAEAV1@AEAV?$vector@VValue@Json@@V?$allocator@VValue@Json@@@std@@@std@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@3@W4BlockShape@@@Z",
+      "address": "0x099C240"
+    },
+    {
+      "name": "?registerLooseBlockGraphics@BlockGraphics@@SAXAEAV?$vector@VValue@Json@@V?$allocator@VValue@Json@@@std@@@std@@AEBVBlockPalette@@@Z",
+      "address": "0x099CA10"
+    },
+    {
+      "name": "?getForBlock@BlockGraphics@@SAPEBV1@AEBVBlock@@@Z",
+      "address": "0x0999410"
+    },
+    {
+      "name": "?getMaterial@Material@@SAAEBV1@W4MaterialType@@@Z",
+      "address": "0x1892CB0"
+    },
+    {
+      "name": "?init@WorldSystems@@SAXPEAVResourcePackManager@@@Z",
+      "address": "0x19151A0"
+    },
+    {
+      "name": "?shutdown@VanillaWorldSystems@@YAXXZ",
+      "address": "0x1B53370"
+    },
+    {
+      "name": "?registerBlocks@VanillaBlockTypes@@YAXXZ",
+      "address": "0x16E0AB0"
+    },
+    {
+      "name": "?lookupByName@BlockTypeRegistry@@SA?AV?$WeakPtr@VBlockLegacy@@@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z",
+      "address": "0x16D9640"
+    },
+    {
+      "name": "?registerBlocks@BlockDefinitionGroup@@QEAAXXZ",
+      "address": "0x169EDC0"
+    },
+    {
+      "name": "?spawnProjectile@Spawner@@QEAAPEAVActor@@AEAVBlockSource@@AEBUActorDefinitionIdentifier@@PEAV2@AEBVVec3@@3@Z",
+      "address": "0x18AC210"
+    },
+    {
+      "name": "?spawnMob@Spawner@@QEAAPEAVMob@@AEAVBlockSource@@AEBUActorDefinitionIdentifier@@PEAVActor@@AEBVVec3@@_N44@Z",
+      "address": "0x18ABF10"
+    },
+    {
+      "name": "?spawnItem@Spawner@@QEAAPEAVItemActor@@AEAVBlockSource@@AEBVItemStack@@PEAVActor@@AEBVVec3@@H@Z",
+      "address": "0x18AC0A0"
+    },
+    {
+      "name": "??0ActorDefinitionIdentifier@@QEAA@W4ActorType@@@Z",
+      "address": "0x12ECB50"
+    },
+    {
+      "name": "?_initialize@ActorDefinitionIdentifier@@AEAAXXZ",
+      "address": "0x12ECEA0"
+    },
+    {
+      "name": "?_extractIdentifier@ActorDefinitionIdentifier@@CAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAU1@@Z",
+      "address": "0x12EC620"
+    },
+    {
+      "name": "?computeHash@HashedString@@SA_KPEBD@Z",
+      "address": "0x0E42550"
+    },
+    {
+      "name": "?initFactory@ProjectileFactory@@SAXXZ",
+      "address": "0x146AD60"
+    },
+    {
+      "name": "?EntityCanonicalName@@YAAEBVHashedString@@W4ActorType@@@Z",
+      "address": "0x1305C00"
+    },
+    {
+      "name": "?EntityTypeToString@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@W4ActorType@@W4ActorTypeNamespaceRules@@@Z",
+      "address": "0x13057E0"
+    },
+    {
+      "name": "?initializeBlockEntityRenderers@BlockActorRenderDispatcher@@QEAAXAEAVGeometryGroup@@AEAVTextureGroup@mce@@AEAVBlockTessellator@@AEBVActorResourceDefinitionGroup@@@Z",
+      "address": "0x09FE8C0"
+    },
+    {
+      "name": "?initializeEntityRenderers@ActorRenderDispatcher@@QEAAXAEAVGeometryGroup@@AEAVTextureGroup@mce@@AEAVBlockTessellator@@AEBVActorResourceDefinitionGroup@@AEBVSemVersion@@@Z",
+      "address": "0x093D2A0"
+    },
+    {
+      "name": "?getRenderer@ActorRenderDispatcher@@QEBAPEAVActorRenderer@@AEBVHashedString@@@Z",
+      "address": "0x09410E0"
+    },
+    {
+      "name": "?getDataDrivenRenderer@ActorRenderDispatcher@@QEBAPEAVDataDrivenRenderer@@AEBVHashedString@@@Z",
+      "address": "0x09410E0"
+    },
+    {
+      "name": "?registerActorInfo@ActorInfoRegistry@@QEAAXAEBUActorInfo@@@Z",
+      "address": "0x12F8840"
+    },
+    {
+      "name": "?setDefinitionGroup@ActorFactory@@QEAAXPEAVActorDefinitionGroup@@@Z",
+      "address": "0x12ED4C0"
+    },
+    {
+      "name": "?broadcastLevelEvent@Level@@QEAAXW4LevelEvent@@AEBVVec3@@HPEAVPlayer@@@Z",
+      "address": "0x17D4C40"
+    },
+    {
+      "name": "?broadcastSoundEvent@Level@@QEAAXAEAVBlockSource@@W4LevelSoundEvent@@AEBVVec3@@HAEBUActorDefinitionIdentifier@@_N4@Z",
+      "address": "0x17D5070"
+    },
+    {
+      "name": "?broadcastDimensionEvent@Level@@QEAAXAEAVBlockSource@@W4LevelEvent@@AEBVVec3@@HPEAVPlayer@@@Z",
+      "address": "0x17D5320"
+    },
+    {
+      "name": "?registerVanillaActorData@VanillaActors@@YAXXZ",
+      "address": "0x146F630"
+    },
+    {
+      "name": "?GetActorDataRegistry@@YAAEAV?$unordered_map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@UActorFactoryData@@U?$hash@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@U?$equal_to@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@UActorFactoryData@@@std@@@2@@std@@XZ",
+      "address": "0x12FF7C0"
+    },
+    {
+      "name": "??0CompoundTag@@QEAA@XZ",
+      "address": "0x0FDBC40"
+    },
+    {
+      "name": "??0CompoundTag@@QEAA@$$QEAV0@@Z",
+      "address": "0x0FDBD10"
+    },
+    {
+      "name": "??1CompoundTag@@UEAA@XZ",
+      "address": "0x0FDBD80"
+    },
+    {
+      "name": "?putFloat@CompoundTag@@QEAAAEAMV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@M@Z",
+      "address": "0x0FDC480"
+    },
+    {
+      "name": "?getFloat@CompoundTag@@QEBAMV?$basic_string_span@$$CBD$0?0@gsl@@@Z",
+      "address": "0x0FDCEB0"
+    },
+    {
+      "name": "?putInt@CompoundTag@@QEAAAEAHV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@Z",
+      "address": "0x0FDC320"
+    },
+    {
+      "name": "?getInt@CompoundTag@@QEBAHV?$basic_string_span@$$CBD$0?0@gsl@@@Z",
+      "address": "0x0FDCD10"
+    },
+    {
+      "name": "?putShort@CompoundTag@@QEAAAEAFV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@F@Z",
+      "address": "0x0FDC270"
+    },
+    {
+      "name": "?getShort@CompoundTag@@QEBAFV?$basic_string_span@$$CBD$0?0@gsl@@@Z",
+      "address": "0x0FDCC50"
+    },
+    {
+      "name": "?contains@CompoundTag@@QEBA_NV?$basic_string_span@$$CBD$0?0@gsl@@@Z",
+      "address": "0x0FDCA00"
+    },
+    {
+      "name": "?onItemSpawnedActor@ItemEventCoordinator@@QEAAXAEBVItemInstance@@AEBVActor@@@Z",
+      "address": "0x14E8430"
+    },
+    {
+      "name": "?sendActorAcquiredItem@ActorEventCoordinator@@QEAAXAEAVActor@@AEBVItemInstance@@IW4ItemAcquisitionMethod@@PEAV2@@Z",
+      "address": "0x14E6420"
+    },
+    {
+      "name": "?sendActorUseItem@ActorEventCoordinator@@QEAAXAEAVActor@@AEBVItemInstance@@W4ItemUseMethod@@@Z",
+      "address": "0x14E63C0"
+    },
+    {
+      "name": "?createSpawnedEntity@ActorFactory@@QEAA?AV?$unique_ptr@VActor@@U?$default_delete@VActor@@@std@@@std@@AEBUActorDefinitionIdentifier@@PEAVActor@@AEBVVec3@@AEBVVec2@@@Z",
+      "address": "0x12EF9D0"
+    },
+    {
+      "name": "?createTransformedEntity@ActorFactory@@QEAA?AV?$unique_ptr@VActor@@U?$default_delete@VActor@@@std@@@std@@AEBUActorDefinitionIdentifier@@PEAVActor@@@Z",
+      "address": "0x12F0110"
+    },
+    {
+      "name": "?_tick@LiquidBlockDynamic@@AEBA_NAEAVBlockSource@@AEBVBlockPos@@AEAVRandom@@_N@Z",
+      "address": "0x16C9CD0"
+    },
+    {
+      "name": "?switchBlock@BlockPalette@@QEBAAEBVBlock@@AEBV2@AEBVBlockLegacy@@@Z",
+      "address": "0x1776150"
+    },
+    {
+      "name": "?isInstanceOf@ActorClassTree@@SA_NAEBVActor@@W4ActorType@@@Z",
+      "address": "0x1292570"
+    },
+    {
+      "name": "?getVariant@Actor@@QEBAHXZ",
+      "address": "0x1260230"
+    },
+    {
+      "name": "?setVariant@Actor@@QEAAXH@Z",
+      "address": "0x1260270"
+    },
+    {
+      "name": "?isPersistent@Actor@@QEBA_NXZ",
+      "address": "0x127F050"
+    },
+    {
+      "name": "?setPersistent@Actor@@QEAAXXZ",
+      "address": "0x1261300"
+    },
+    {
+      "name": "?getStatusFlag@Actor@@QEBA_NW4ActorFlags@@@Z",
+      "address": "0x1271B50"
+    },
+    {
+      "name": "?setStatusFlag@Actor@@QEAA_NW4ActorFlags@@_N@Z",
+      "address": "0x1271BC0"
+    },
+    {
+      "name": "?addEffect@Actor@@QEAAXAEBVMobEffectInstance@@@Z",
+      "address": "0x1277630"
+    },
+    {
+      "name": "??0MobEffectInstance@@QEAA@IHHHHH_N00@Z",
+      "address": "0x14E54B0"
+    },
+    {
+      "name": "?getByName@MobEffect@@SAPEAV1@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z",
+      "address": "0x14E2F50"
+    },
+    {
+      "name": "?get@I18n@@SA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV23@@Z",
+      "address": "0x0FD6BF0"
+    },
+    {
+      "name": "?_takeLiquid@BucketItem@@QEBA_NAEAVItemStack@@AEAVActor@@AEBVBlockPos@@@Z",
+      "address": "0x151BA00"
+    },
+    {
+      "name": "?ejectItem@DispenserBlock@@SAXAEAVBlockSource@@AEBVVec3@@EAEBVItemStack@@@Z",
+      "address": "0x16A6F40"
+    },
+    {
+      "name": "??0ItemSpriteRenderer@@QEAA@AEAVTextureGroup@mce@@PEAVItem@@_N@Z",
+      "address": "0x0983AB0"
+    },
+    {
+      "name": "??1ItemSpriteRenderer@@UEAA@XZ",
+      "address": "0x0983BC0"
+    },
+    {
+      "name": "??0BaseActorRenderer@@QEAA@XZ",
+      "address": "0x09950E0"
+    },
+    {
+      "name": "?onAppSuspended@ItemSpriteRenderer@@UEAAXXZ",
+      "address": "0x0983D50"
+    },
+    {
+      "name": "?_renderQuad@ItemSpriteRenderer@@QEAAXAEAVBaseActorRenderContext@@AEAVActor@@AEAVMesh@mce@@AEBVVec3@@MM@Z",
+      "address": "0x0984220"
+    },
+    {
+      "name": "?_buildQuad@ItemSpriteRenderer@@QEAAXAEAVBaseActorRenderContext@@AEAVActor@@AEAVMesh@mce@@@Z",
+      "address": "0x0983EB0"
+    },
+    {
+      "name": "??1Mesh@mce@@QEAA@XZ",
+      "address": "0x0DD3F60"
+    },
+    {
+      "name": "??0Mesh@mce@@QEAA@XZ",
+      "address": "0x0DD3D80"
+    },
+    {
+      "name": "?reset@Mesh@mce@@QEAAXXZ",
+      "address": "0x0DD4500"
+    },
+    {
+      "name": "?isValid@Mesh@mce@@QEBA_NXZ",
+      "address": "0xDD47B0"
+    },
+    {
+      "name": "?renderMesh@Mesh@mce@@QEBAXAEAVMeshContext@2@AEBVMaterialPtr@2@V?$span@PEBVClientTexture@mce@@$0?0@gsl@@IIPEBVIndexBufferContainer@2@@Z",
+      "address": "0x0DD4BF0"
+    },
+    {
+      "name": "?init@Recipes@@QEAAXAEAVResourcePackManager@@@Z",
+      "address": "0x152D6D0"
+    },
+    {
+      "name": "?addFurnaceRecipeAuxData@Recipes@@QEAAXAEBVItemInstance@@0AEBV?$vector@VHashString@Util@@V?$allocator@VHashString@Util@@@std@@@std@@@Z",
+      "address": "0x15392B0"
+    },
+    {
+      "name": "?addShapedRecipe@Recipes@@QEAAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBVItemInstance@@AEBV23@22AEBV?$vector@VType@Recipes@@V?$allocator@VType@Recipes@@@std@@@3@AEBV?$vector@VHashString@Util@@V?$allocator@VHashString@Util@@@std@@@3@HV?$function@$$A6A?AV?$unique_ptr@VShapedRecipe@@U?$default_delete@VShapedRecipe@@@std@@@std@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@HHAEBV?$vector@VRecipeIngredient@@V?$allocator@VRecipeIngredient@@@std@@@2@AEBV?$vector@VItemInstance@@V?$allocator@VItemInstance@@@std@@@2@VHashString@Util@@@Z@3@@Z",
+      "address": "0x153A270"
+    },
+    {
+      "name": "?addShapedRecipe@Recipes@@QEAAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBVItemInstance@@AEBV23@2AEBV?$vector@VType@Recipes@@V?$allocator@VType@Recipes@@@std@@@3@AEBV?$vector@VHashString@Util@@V?$allocator@VHashString@Util@@@std@@@3@HV?$function@$$A6A?AV?$unique_ptr@VShapedRecipe@@U?$default_delete@VShapedRecipe@@@std@@@std@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@HHAEBV?$vector@VRecipeIngredient@@V?$allocator@VRecipeIngredient@@@std@@@2@AEBV?$vector@VItemInstance@@V?$allocator@VItemInstance@@@std@@@2@VHashString@Util@@@Z@3@@Z",
+      "address": "0x153A090"
+    },
+    {
+      "name": "?addShapedRecipe@Recipes@@QEAAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBVItemInstance@@AEBV23@AEBV?$vector@VType@Recipes@@V?$allocator@VType@Recipes@@@std@@@3@AEBV?$vector@VHashString@Util@@V?$allocator@VHashString@Util@@@std@@@3@HV?$function@$$A6A?AV?$unique_ptr@VShapedRecipe@@U?$default_delete@VShapedRecipe@@@std@@@std@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@HHAEBV?$vector@VRecipeIngredient@@V?$allocator@VRecipeIngredient@@@std@@@2@AEBV?$vector@VItemInstance@@V?$allocator@VItemInstance@@@std@@@2@VHashString@Util@@@Z@3@@Z",
+      "address": "0x1539F00"
+    },
+    {
+      "name": "?addShapedRecipe@Recipes@@QEAAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBVItemInstance@@AEBV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@3@AEBV?$vector@VType@Recipes@@V?$allocator@VType@Recipes@@@std@@@3@AEBV?$vector@VHashString@Util@@V?$allocator@VHashString@Util@@@std@@@3@HV?$function@$$A6A?AV?$unique_ptr@VShapedRecipe@@U?$default_delete@VShapedRecipe@@@std@@@std@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@HHAEBV?$vector@VRecipeIngredient@@V?$allocator@VRecipeIngredient@@@std@@@2@AEBV?$vector@VItemInstance@@V?$allocator@VItemInstance@@@std@@@2@VHashString@Util@@@Z@3@@Z",
+      "address": "0x1539D90"
+    },
+    {
+      "name": "?addShapedRecipe@Recipes@@QEAAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV?$vector@VItemInstance@@V?$allocator@VItemInstance@@@std@@@3@AEBV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@3@AEBV?$vector@VType@Recipes@@V?$allocator@VType@Recipes@@@std@@@3@AEBV?$vector@VHashString@Util@@V?$allocator@VHashString@Util@@@std@@@3@HV?$function@$$A6A?AV?$unique_ptr@VShapedRecipe@@U?$default_delete@VShapedRecipe@@@std@@@std@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@HHAEBV?$vector@VRecipeIngredient@@V?$allocator@VRecipeIngredient@@@std@@@2@AEBV?$vector@VItemInstance@@V?$allocator@VItemInstance@@@std@@@2@VHashString@Util@@@Z@3@@Z",
+      "address": "0x15394D0"
+    },
+    {
+      "name": "?createBlockEntity@BlockActorFactory@@SA?AV?$shared_ptr@VBlockActor@@@std@@W4BlockActorType@@AEBVBlockPos@@AEBVBlockLegacy@@@Z",
+      "address": "0x160F060"
+    },
+    {
+      "name": "??0BlockActor@@QEAA@W4BlockActorType@@AEBVBlockPos@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z",
+      "address": "0x1610C40"
+    },
+    {
+      "name": "??1BlockActor@@UEAA@XZ",
+      "address": "0x1610E00"
+    },
+    {
+      "name": "?setId@BlockActor@@SAXW4BlockActorType@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z",
+      "address": "0x160FCA0"
+    },
+    {
+      "name": "?initBlockEntities@BlockActor@@SAXXZ",
+      "address": "0x160FDC0"
+    },
+    {
+      "name": "?getTemperature@Biome@@QEBAMAEBVBlockSource@@AEBVBlockPos@@@Z",
+      "address": "0x15BC900"
+    },
+    {
+      "name": "?getFoliageColor@Biome@@QEBAHAEBVBlockPos@@@Z",
+      "address": "0x15BB980"
+    },
+    {
+      "name": "?getMapFoliageColor@Biome@@QEBAHAEBVBlockPos@@@Z",
+      "address": "0x15BBB20"
+    },
+    {
+      "name": "?isDeepLeafBlock@LeafBlock@@SA_NAEAVBlockSource@@AEBVBlockPos@@@Z",
+      "address": "0x16C33E0"
+    },
+    {
+      "name": "?getSeasonsColor@BlockInfestingLeaves@@QEBA?AVColor@@AEAVBlockSource@@AEBVBlockPos@@HH@Z",
+      "address": "0x16C3F90"
+    },
+    {
+      "name": "?getBirchColor@FoliageColor@@SAHMM@Z",
+      "address": "0x17CBB90"
+    },
+    {
+      "name": "?getEvergreenColor@FoliageColor@@SAHMM@Z",
+      "address": "0x17CBAA0"
+    },
+    {
+      "name": "?tessellateInWorld@BlockTessellator@@QEAA_NAEAVTessellator@@AEBVBlock@@AEBVBlockPos@@PEAX@Z",
+      "address": "0x09ACEF0"
+    },
+    {
+      "name": "?tessellateExtraDataInWorld@BlockTessellator@@QEAA_NAEAVTessellator@@AEBVBlock@@AEBVBlockPos@@@Z",
+      "address": "0x09AE700"
+    },
+    {
+      "name": "?tessellateBlockInWorld@BlockTessellator@@QEAA_NAEAVTessellator@@AEBVBlock@@AEBVBlockPos@@@Z",
+      "address": "0x09ABEF0"
+    },
+    {
+      "name": "?tessellateBlockInWorldWithAmbienceOcclusion@BlockTessellator@@QEAA_NAEAVTessellator@@AEBVBlock@@VBlockPos@@AEBVColor@@PEAVBlockOccluder@@H@Z",
+      "address": "0x09C06C0"
+    },
+    {
+      "name": "?tessellateFaceUp@BlockTessellator@@QEAAXAEAVTessellator@@AEBVBlock@@AEBVVec3@@AEBUTextureUVCoordinateSet@@@Z",
+      "address": "0x09C7440"
+    },
+    {
+      "name": "?tessellateFaceDown@BlockTessellator@@QEAAXAEAVTessellator@@AEBVBlock@@AEBVVec3@@AEBUTextureUVCoordinateSet@@@Z",
+      "address": "0x09C6570"
+    },
+    {
+      "name": "?tessellateNorth@BlockTessellator@@QEAAXAEAVTessellator@@AEBVBlock@@AEBVVec3@@AEBUTextureUVCoordinateSet@@@Z",
+      "address": "0x09C8310"
+    },
+    {
+      "name": "?tessellateSouth@BlockTessellator@@QEAAXAEAVTessellator@@AEBVBlock@@AEBVVec3@@AEBUTextureUVCoordinateSet@@@Z",
+      "address": "0x09C91E0"
+    },
+    {
+      "name": "?tessellateEast@BlockTessellator@@QEAAXAEAVTessellator@@AEBVBlock@@AEBVVec3@@AEBUTextureUVCoordinateSet@@@Z",
+      "address": "0x09CAF90"
+    },
+    {
+      "name": "?tessellateWest@BlockTessellator@@QEAAXAEAVTessellator@@AEBVBlock@@AEBVVec3@@AEBUTextureUVCoordinateSet@@@Z",
+      "address": "0x09CA0C0"
+    },
+    {
+      "name": "?getMeshForBlockInWorld@BlockTessellator@@QEAAAEAVMesh@mce@@AEAVTessellator@@AEBVBlock@@AEAVBlockPos@@W4BlockRenderLayer@@PEBX_N@Z",
+      "address": "0x09CE5D0"
+    },
+    {
+      "name": "?getLightColor@BlockTessellator@@QEAA?AUBrightnessPair@@AEBVBlockPos@@@Z",
+      "address": "0x09E70F0"
+    },
+    {
+      "name": "?getCurrentShape@BlockTessellator@@QEAAAEBVAABB@@XZ",
+      "address": "0x09ABBE0"
+    },
+    {
+      "name": "?canRender@BlockTessellator@@QEAA_NW4BlockShape@@@Z",
+      "address": "0x09CEA80"
+    },
+    {
+      "name": "?reset@BlockTessellator@@QEAAXXZ",
+      "address": "0x09AD9E0"
+    },
+    {
+      "name": "?reset@BlockTessellatorCache@@QEAAXAEAVBlockSource@@AEBVBlockPos@@@Z",
+      "address": "0x09F7830"
+    },
+    {
+      "name": "?getLightColor@BlockTessellatorCache@@QEAA?AUBrightnessPair@@AEBVBlockPos@@@Z",
+      "address": "0x09F7AD0"
+    },
+    {
+      "name": "??1TexturePtr@mce@@QEAA@XZ",
+      "address": "0x0DDF360"
+    },
+    {
+      "name": "??1MaterialPtr@mce@@QEAA@XZ",
+      "address": "0x00D0140"
+    },
+    {
+      "name": "??0MovingBlockActorRenderer@@QEAA@AEAVTextureGroup@mce@@AEAVBlockTessellator@@@Z",
+      "address": "0x0A085A0"
+    },
+    {
+      "name": "?render@MovingBlockActorRenderer@@UEAAXAEAVBaseActorRenderContext@@AEAVBlockActorRenderData@@@Z",
+      "address": "0x0A08E00"
+    },
+    {
+      "name": "?setupShaderParameters@ActorShaderManager@@SAXAEAVScreenContext@@AEAVBlockSource@@AEBVBlockPos@@M_NAEAVLightTexture@@AEBVVec2@@AEBVVec4@@@Z",
+      "address": "0x0994260"
+    },
+    {
+      "name": "?addPostTransformOffset@Tessellator@@QEAAXMMM@Z",
+      "address": "0x0AB14D0"
+    },
+    {
+      "name": "?beginOverride@Tessellator@@QEAAXXZ",
+      "address": "0x0AB0B60"
+    },
+    {
+      "name": "?color@Tessellator@@QEAAXAEBVColor@@@Z",
+      "address": "0x0AB0BE0"
+    },
+    {
+      "name": "?end@Tessellator@@QEAA?AVMesh@mce@@W4UploadMode@1@V?$basic_string_span@$$CBD$0?0@gsl@@@Z",
+      "address": "0x0AB1710"
+    },
+    {
+      "name": "?_tex@Tessellator@@QEAA_NAEBVVec2@@H@Z",
+      "address": "0x0AB0AA0"
+    },
+    {
+      "name": "?getClientTexture@TexturePtr@mce@@QEBAPEAVClientTexture@2@XZ",
+      "address": "0x0DDF4F0"
+    },
+    {
+      "name": "??0BlockActorDataPacket@@QEAA@AEBVBlockPos@@VCompoundTag@@@Z",
+      "address": "0x100D890"
+    },
+    {
+      "name": "??1BlockActorDataPacket@@QEAA@XZ",
+      "address": "0x0EAB380"
+    },
+    {
+      "name": "?brightnessToUV@LightTexture@@SA?AVVec2@@UBrightnessPair@@@Z",
+      "address": "0x0A97B60"
+    },
+    {
+      "name": "??0AmbientOcclusionCalculator@@QEAA@AEBVBlockPos@@AEBVBlock@@AEAVBlockTessellatorCache@@@Z",
+      "address": "0x0995EB0"
+    },
+    {
+      "name": "?calculate@AmbientOcclusionCalculator@@QEAAXE@Z",
+      "address": "0x0995FA0"
+    },
+    {
+      "name": "??0BlockOccluder@@QEAA@AEAVBlockTessellatorCache@@AEBVBlock@@AEBVBlockPos@@AEBVAABB@@AEBV?$vector@EV?$allocator@E@std@@@std@@_N@Z",
+      "address": "0x09A97E0"
+    },
+    {
+      "name": "?RegisterItemsTrampoline@MainHooks@@2P6AX_N@ZEA",
+      "address": "0x0000000"
+    },
+    {
+      "name": "?InitializeCreativeItemsTrampoline@MainHooks@@2P6AXPEAVActorInfoRegistry@@PEAVBlockDefinitionGroup@@_N@ZEA",
+      "address": "0x0000000"
+    },
+    {
+      "name": "?InitializeClientTrampoline@MainHooks@@2P6AXXZEA",
+      "address": "0x0000000"
+    }
+  ]
 }
