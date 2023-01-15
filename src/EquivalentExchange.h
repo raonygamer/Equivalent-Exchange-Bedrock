@@ -1,9 +1,12 @@
 #include "Zenova.h"
+#include "Zenova/Minecraft/Inputs.h"
 
 #include "generated/initcpp.h"
 
 #include "MainHooks.h"
+#include "MainInputs.h"
 #include "minecraft/item/VanillaItems.h"
+#include "fmt/color.h"
 
 class EquivalentExchange : public Zenova::Mod {
 public:
@@ -12,5 +15,6 @@ public:
 	virtual void Tick();
 	virtual void Stop();
 	void CreateHooks();
+	void CreateInputs();
 	virtual ~EquivalentExchange();
 };

@@ -1,0 +1,15 @@
+{
+    "format_version": "1.14.0",
+    "sound_definitions": {
+        "ee.charge": {
+            "sounds": [
+                "sounds/item/pecharge"
+            ]
+        },
+        "ee.uncharge": {
+            "sounds": [
+                "sounds/item/peuncharge"
+            ]
+        }
+    }
+}

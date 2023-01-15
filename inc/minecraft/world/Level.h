@@ -6,6 +6,7 @@
 #include "LevelEvent.h"
 #include "../actor/ActorFactory.h"
 #include "../block/Block.h"
+#include "LevelListener.h"
 
 class Spawner;
 class ActorInfoRegistry;
@@ -30,7 +31,9 @@ class Level : public BlockSourceListener, public IWorldRegistriesProvider {
 private:
     char filler0[0x168];
     std::shared_ptr<ActorInfoRegistry> mActorInfoRegistry;                          // 0x178
-    char filler1[0x598];                                                            // 0x188
+    char filler1a[0x60];
+    std::vector<LevelListener*> mListeners;
+    char filler1b[0x514];
     std::unique_ptr<Spawner> mMobSpawner;                                           // 0x720
     std::unique_ptr<ProjectileFactory> mProjectileFactory;                          // 0x728
     std::unique_ptr<BehaviorFactory> mBehaviorFactory;                              // 0x730
@@ -87,5 +90,10 @@ public:
     }
     ItemEventCoordinator& getItemEventCoordinator() {
         return *mItemEventCoordinator;
+    }
+    void Level::playSound(const std::string& name, const Vec3& pos, float volume, float pitch) {
+        for (uint32_t i = 0; i < mListeners.size(); ++i) {
+            mListeners[i]->levelSoundEvent(name, pos, volume, pitch);
+        }
     }
 };

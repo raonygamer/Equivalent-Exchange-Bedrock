@@ -1,0 +1,12 @@
+{
+    "individual_event_sounds": {
+        "events": {
+            "ee.charge": {
+                "sound": "ee.charge"
+            },
+            "ee.uncharge": {
+                "sound": "ee.uncharge"
+            }
+        }
+    }
+}

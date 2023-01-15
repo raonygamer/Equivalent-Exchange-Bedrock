@@ -5,6 +5,7 @@ void EquivalentExchange::Start() {
 	{
 		Zenova_Info("Equivalent Exchange loaded successfully, creating hooks and instantiating content.");
 		CreateHooks();
+		CreateInputs();
 	}
 	else
 	{
@@ -17,7 +18,14 @@ void EquivalentExchange::CreateHooks() {
 	Zenova_Hook(VanillaItems::registerItems, &MainHooks::RegisterItemsHook, &MainHooks::RegisterItemsTrampoline);
 	Zenova_Hook(VanillaItems::initCreativeItemsCallback, &MainHooks::InitializeCreativeItemsHook, &MainHooks::InitializeCreativeItemsTrampoline);
 	Zenova_Hook(VanillaItems::initClientData, &MainHooks::InitializeClientHook, &MainHooks::InitializeClientTrampoline);
+	Zenova_Hook(VanillaItems::unregisterItems, &MainHooks::UnregisterItemsHook, &MainHooks::UnregisterItemsTrampoline);
 	Zenova_Info("Created Hooks Successfully.");
+}
+
+void EquivalentExchange::CreateInputs() {
+	Zenova::InputManager::addInput("charge_item", &MainInputs::ChargeKeyEvent).addKeyboardBind<char>('C').setKeyboardMapping('C');
+	Zenova::InputManager::addInput("uncharge_item_helper", &HelperInputs::HelperChargeKeyEvent).addKeyboardBind(KeyboardBinding::Control).setKeyboardMapping(KeyboardBinding::Control);
+	Zenova_Info("Created Inputs Successfully.");
 }
 
 void EquivalentExchange::Update() {

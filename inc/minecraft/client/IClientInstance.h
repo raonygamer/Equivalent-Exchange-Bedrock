@@ -1,9 +1,10 @@
 #pragma once
+#include "../actor/LocalPlayer.h"
 
 class LightTexture;
 
 class IClientInstance {
-public:
+	virtual void filler0() = 0;
 	virtual void filler1() = 0;
 	virtual void filler2() = 0;
 	virtual void filler3() = 0;
@@ -26,8 +27,10 @@ public:
 	virtual void filler20() = 0;
 	virtual void filler21() = 0;
 	virtual void filler22() = 0;
-	virtual void filler23() = 0;
-	virtual void filler24() = 0;
+public:
+	virtual LocalPlayer& getLocalPlayer();
+	virtual LocalPlayer& getLocalPlayer() const;
+private:
 	virtual void filler25() = 0;
 	virtual void filler26() = 0;
 	virtual void filler27() = 0;

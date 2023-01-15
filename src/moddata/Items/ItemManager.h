@@ -7,17 +7,10 @@
 
 class ItemManager {
 public:
-	static std::map<std::string, WeakPtr<Item>> Items;
+	static WeakPtr<PhilosophersStoneItem> philosophersStoneItem;
 
 	static void Initialize();
+	static void Deinitialize();
 	static void InitializeCreative();
 	static void InitializeTextures();
-	template<typename T>
-	static WeakPtr<T> GetItem(const std::string& name) {
-		auto iterator = Items.find(name);
-		if (iterator == Items.end())
-			return nullptr;
-		else
-			return iterator->second;
-	}
 };

@@ -12,6 +12,7 @@ public:
 	static WeakPtr<Item>& mString;
 
 	static void registerItems(bool);
+	static void unregisterItems();
 	static void initCreativeItemsCallback(ActorInfoRegistry*, BlockDefinitionGroup*, bool);
 	static void initCreativeCategories();
 	static void initClientData();

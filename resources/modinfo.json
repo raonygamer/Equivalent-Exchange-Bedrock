@@ -1,7 +1,7 @@
 {
     "nameId": "EquivalentExchange",
     "name": "Equivalent Exchange Mod",
-    "description": "",
+    "description": "This mod is a port of ProjectE java mod!",
     "version": "1.0.0",
     "mcversion": [
         "1.14.60.5",

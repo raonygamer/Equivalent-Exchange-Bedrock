@@ -1,2 +1,6 @@
+resourcePack.addon.name=Equivalent Exchange
+resourcePack.addon.description=This mod is a port of ProjectE java mod!
 itemGroup.name.exchangeItems=Exchange Items
 item.equivalentexchange:philosophers_stone.name=Philosophers Stone
+key.charge_item=Charge Item
+key.uncharge_item_helper=Uncharge Item Helper

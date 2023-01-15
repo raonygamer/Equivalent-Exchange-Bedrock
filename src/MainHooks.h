@@ -11,14 +11,20 @@ public:
 	}
 
 	inline static void (*InitializeCreativeItemsTrampoline)(class ActorInfoRegistry*, class BlockDefinitionGroup*, bool);
-	static void (InitializeCreativeItemsHook)(class ActorInfoRegistry* actorInfoRegistry, class BlockDefinitionGroup* blockDefinitionGroup, bool flag) {
+	static void InitializeCreativeItemsHook(class ActorInfoRegistry* actorInfoRegistry, class BlockDefinitionGroup* blockDefinitionGroup, bool flag) {
 		InitializeCreativeItemsTrampoline(actorInfoRegistry, blockDefinitionGroup, flag);
 		ItemManager::InitializeCreative();
 	}
 
 	inline static void (*InitializeClientTrampoline)();
-	static void (InitializeClientHook)() {
+	static void InitializeClientHook() {
 		InitializeClientTrampoline();
 		ItemManager::InitializeTextures();
+	}
+
+	inline static void (*UnregisterItemsTrampoline)();
+	static void UnregisterItemsHook() {
+		UnregisterItemsTrampoline();
+		ItemManager::Deinitialize();
 	}
 };

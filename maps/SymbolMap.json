@@ -1312,6 +1312,10 @@
 
   "functions": [
     {
+      "name": "?unregisterItems@VanillaItems@@SAXXZ",
+      "address": "0x159F260"
+    },
+    {
       "name": "??0BowItem@@QEAA@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@Z",
       "address": "0x1516F60"
     },

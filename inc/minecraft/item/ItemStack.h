@@ -15,7 +15,9 @@ struct SortItemInstanceIdAux {
 class ItemStackBase {
 protected:
 	WeakPtr<Item> mItem;
+public:
 	std::unique_ptr<CompoundTag> mUserData;
+protected:
 	const Block* mBlock;
 	short mAuxValue;
 	byte mCount;
@@ -45,6 +47,9 @@ protected:
 	virtual void reinit(const Item&, int, int) = 0;
 
 public:
+	bool isItem() const {
+		return mItem != nullptr;
+	}
 	void add(const int inCount) {
 		set(mCount + inCount);
 	}
@@ -70,6 +75,17 @@ public:
 		return &i == mItem.get();
 	}
 	bool matchesItem(const ItemStackBase&) const;
+	const std::unique_ptr<CompoundTag>& getUserData() const {
+		return mUserData;
+	}
+	short ItemStackBase::getDamageValue() const {
+		return (isItem()) ? getItem()->getDamageValue(getUserData()) : 0;
+	}
+	void ItemStackBase::setDamageValue(short newDamage) {
+		if (isItem()) {
+			getItem()->setDamageValue(*this, newDamage);
+		}
+	}
 };
 
 class ItemStack : public ItemStackBase {
