@@ -35,7 +35,13 @@ public:
     int getColorAtPos(BlockSource&, const BlockPos&) const;
     BlockRenderLayer getRenderLayer(BlockSource&, const BlockPos&) const;
     bool isSeasonTinted(BlockSource&, const BlockPos&) const;
-    bool canHaveExtraData() const;
+    bool canHaveExtraData() const 
+    {
+        if (mLegacyBlock != nullptr)
+            mLegacyBlock->canHaveExtraData();
+        else
+            return false;
+    };
     int getVariant() const;
 
     const BlockRuntimeId& getRuntimeId() const {

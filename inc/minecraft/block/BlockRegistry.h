@@ -40,7 +40,7 @@ namespace Zenova {
 
 			template<std::size_t ...I>
 			WeakPtr<BlockLegacy> registerBlock(BlockDefinitionGroup* blockGroup, std::index_sequence<I...>) {
-				return BlockTypeRegistry::registerBlock<T>("exnihilo:" + nameId, blockGroup->getNextBlockId(), std::get<I>(arguments)...)
+				return BlockTypeRegistry::registerBlock<T>(nameId, blockGroup->getNextBlockId(), std::get<I>(arguments)...)
 					.setIsVanillaBlock(false)
 					.createWeakPtr();
 			}

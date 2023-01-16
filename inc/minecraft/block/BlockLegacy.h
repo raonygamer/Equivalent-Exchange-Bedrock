@@ -376,7 +376,7 @@ public:
     const std::string& getDescriptionId() const {
         return mDescriptionId;
     }
-    const std::string& getRawNameId() const {
+    inline const std::string& getRawNameId() const {
         return mRawNameId;
     }
     bool hasProperty(BlockProperty type) const {

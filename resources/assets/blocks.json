@@ -1,0 +1,9 @@
+{
+	"format_version": "1.14.0",
+	"equivalentexchange:dark_matter_furnace": {
+		"textures": {
+			"up": "dark_matter_block"
+		},
+        "sound": "metal"
+	}
+}

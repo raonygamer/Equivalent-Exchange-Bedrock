@@ -1,0 +1,17 @@
+{
+	"num_mip_levels": 4,
+	"padding": 8,
+	"resource_pack_name": "EE",
+	"texture_name": "atlas.terrain",
+	"texture_data": {
+        "dark_matter_furnace_front": {
+            "textures": [
+                "textures/blocks/dark_matter_furnace/dm_off",
+                "textures/blocks/dark_matter_furnace/dm_on"
+            ]
+        },
+        "dark_matter_block": {
+            "textures": "textures/blocks/dark_matter_block"
+        }
+    }
+}

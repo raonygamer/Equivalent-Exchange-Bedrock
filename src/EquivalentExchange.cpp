@@ -6,6 +6,7 @@ void EquivalentExchange::Start() {
 		Zenova_Info("Equivalent Exchange loaded successfully, creating hooks and instantiating content.");
 		CreateHooks();
 		CreateInputs();
+		BlockManager::Initialize();
 	}
 	else
 	{
@@ -19,6 +20,10 @@ void EquivalentExchange::CreateHooks() {
 	Zenova_Hook(VanillaItems::initCreativeItemsCallback, &MainHooks::InitializeCreativeItemsHook, &MainHooks::InitializeCreativeItemsTrampoline);
 	Zenova_Hook(VanillaItems::initClientData, &MainHooks::InitializeClientHook, &MainHooks::InitializeClientTrampoline);
 	Zenova_Hook(VanillaItems::unregisterItems, &MainHooks::UnregisterItemsHook, &MainHooks::UnregisterItemsTrampoline);
+	Zenova_Hook(BlockGraphics::registerLooseBlockGraphics, &MainHooks::RegisterLooseBlockGraphicsHook, &MainHooks::RegisterLooseBlockGraphicsTrampoline);
+	Zenova_Hook(BlockDefinitionGroup::registerBlocks, &MainHooks::RegisterBlocksHook, &MainHooks::RegisterBlocksTrampoline);
+	Zenova_Hook(BlockTessellator::tessellateInWorld, &MainHooks::TessellateInWorldHook, &MainHooks::TessellateInWorldTrampoline);
+	Zenova_Hook(BlockTessellator::canRender, &MainHooks::CanRenderBlockInGuiHook, &MainHooks::CanRenderBlockInGuiTrampoline);
 	Zenova_Info("Created Hooks Successfully.");
 }
 
@@ -29,12 +34,12 @@ void EquivalentExchange::CreateInputs() {
 }
 
 void EquivalentExchange::Update() {
-
+	TickRuntime::Update();
 }
 
 
 void EquivalentExchange::Tick() {
-
+	TickRuntime::Tick();
 }
 
 

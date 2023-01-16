@@ -4,3 +4,5 @@ itemGroup.name.exchangeItems=Exchange Items
 item.equivalentexchange:philosophers_stone.name=Philosophers Stone
 key.charge_item=Charge Item
 key.uncharge_item_helper=Uncharge Item Helper
+tile.equivalentexchange:dark_matter_furnace.name=Dark Matter Furnace
+itemGroup.name.eeFurnaces=Exchange Furnaces

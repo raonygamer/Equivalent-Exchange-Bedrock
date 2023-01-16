@@ -5,7 +5,6 @@
 
 #include "../util/Util.h"
 #include "../util/SharedPtr.h"
-#include "BlockLegacy.h"
 
 class BlockLegacy;
 

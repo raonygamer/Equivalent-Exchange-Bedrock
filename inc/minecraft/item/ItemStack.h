@@ -96,7 +96,6 @@ public:
 	ItemStack(const Item& item, int count, int aux) : ItemStackBase(item, count, aux) {}
 
 	virtual void reinit(const BlockLegacy&, int);
-protected:
 	virtual void reinit(const Item&, int, int);
 };
 

@@ -10,6 +10,9 @@ public:
 	static WeakPtr<Item>& mGoldIngot;
 	static WeakPtr<Item>& mShears;
 	static WeakPtr<Item>& mString;
+	static WeakPtr<Item>& mDiamond;
+	static WeakPtr<Item>& mGlowstone;
+	static WeakPtr<Item>& mRedstone;
 
 	static void registerItems(bool);
 	static void unregisterItems();

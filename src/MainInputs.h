@@ -29,13 +29,14 @@ public:
 		if (!pressed) return;
 
 		LocalPlayer& localPlayer = client.getLocalPlayer();
-		ItemStack itemStack = localPlayer.getSelectedItem();
+		ItemStack& itemStack = (ItemStack&)localPlayer.getSelectedItem();
 
 		if (itemStack.isItem() && itemStack.getItem()->getCommandName() == "equivalentexchange:philosophers_stone") {
 			int currentChargeValue = itemStack.getDamageValue();
+			if (currentChargeValue <= 5 && !HelperInputs::HelperChargePressed) return;
+			if (currentChargeValue >= 1000 && HelperInputs::HelperChargePressed) return;
 			currentChargeValue += (HelperInputs::HelperChargePressed ? 250 : -250);
 			itemStack.setDamageValue(currentChargeValue);
-			Zenova_Info("Current Charge Value: {}", currentChargeValue);
 			localPlayer.getLevel().playSound((HelperInputs::HelperChargePressed ? "ee.uncharge" : "ee.charge"), localPlayer.getPos(), 1, PitchCalculator::calcPitch(currentChargeValue));
 		}
 	}

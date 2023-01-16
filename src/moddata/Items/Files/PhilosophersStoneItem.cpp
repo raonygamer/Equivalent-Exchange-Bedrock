@@ -7,24 +7,16 @@ PhilosophersStoneItem::PhilosophersStoneItem(const std::string& name, short id) 
 	setCategory(CreativeItemCategory::ITEMS);
 };
 
-const TextureUVCoordinateSet& PhilosophersStoneItem::getIcon(const ItemStackBase& itemStack, int frame, bool isInventoryPane) const {
-	return getIconTextureUVSet(textureItem, 0, 0);
-}
-
-Item& PhilosophersStoneItem::setIcon(const std::string& name, int id) {
-	Item::setIcon(name, id);
-	textureItem = getTextureItem(name);
-	return *this;
-}
-
 bool PhilosophersStoneItem::showsDurabilityInCreative() const {
 	return true;
 }
 
-bool PhilosophersStoneItem::isDestructive(int) const {
-	return true;
+short PhilosophersStoneItem::getMaxDamage() const
+{
+	return 1005;
 }
 
-int PhilosophersStoneItem::getDamageChance(int) const {
-	return -1;
+void PhilosophersStoneItem::setDamageValue(ItemStackBase& base, short value) const
+{
+	Item::setDamageValue(base, value);
 }

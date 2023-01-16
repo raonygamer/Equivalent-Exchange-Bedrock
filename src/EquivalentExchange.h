@@ -7,6 +7,8 @@
 #include "MainInputs.h"
 #include "minecraft/item/VanillaItems.h"
 #include "fmt/color.h"
+#include "moddata/Managers/TickRuntime.h"
+#include "moddata/Blocks/BlockManager.h"
 
 class EquivalentExchange : public Zenova::Mod {
 public:
