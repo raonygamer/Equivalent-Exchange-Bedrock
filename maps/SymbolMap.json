@@ -2114,8 +2114,63 @@
       "address": "0x0DE85F0"
     },
     {
-      "name": "??0FurnaceBlock@@QEAA@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H_N@Z",
-      "address": "0x1719A90"
+      "name": "??0FurnaceBlockActor@@QEAA@W4BlockActorType@@AEBVBlockPos@@AEBVHashedString@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@W4ContainerType@@HAEBVBlock@@5@Z",
+      "address": "0x1629340"
+    },
+    {
+        "name": "??1FurnaceBlockActor@@UEAA@XZ",
+        "address": "0x16298F0"
+    },
+    {
+        "name": "?load@FurnaceBlockActor@@UEAAXAEAVLevel@@AEBVCompoundTag@@AEAVDataLoadHelper@@@Z",
+        "address": "0x162A010"
+    },
+    {
+        "name": "?save@FurnaceBlockActor@@UEBA_NAEAVCompoundTag@@@Z",
+        "address": "0x1611270"
+    },
+    {
+        "name": "?onCustomTagLoadDone@FurnaceBlockActor@@UEAAXAEAVBlockSource@@@Z",
+        "address": "0x1629FC0"
+    },
+    {
+        "name": "?tick@FurnaceBlockActor@@UEAAXAEAVBlockSource@@@Z",
+        "address": "0x162A4A0"
+    },
+    {
+        "name": "?isFinished@FurnaceBlockActor@@UEAA_NXZ",
+        "address": "0x162A480"
+    },
+    {
+        "name": "?onChanged@FurnaceBlockActor@@UEAAXAEAVBlockSource@@@Z",
+        "address": "0x16118D0"
+    },
+    {
+        "name": "?getUpdatePacket@FurnaceBlockActor@@UEAA?AV?$unique_ptr@VPacket@@U?$default_delete@VPacket@@@std@@@std@@AEAVBlockSource@@@Z",
+        "address": "0x16118E0"
+    },
+    {
+        "name": "?onPlace@FurnaceBlockActor@@UEAAXAEAVBlockSource@@@Z",
+        "address": "0x162BC70"
+    },
+    {
+        "name": "?_onUpdatePacket@FurnaceBlockActor@@UEAAXAEBVCompoundTag@@AEAVBlockSource@@@Z",
+        "address": "0x16152A0"
+    },
+    {
+        "name": "?onMove@FurnaceBlockActor@@UEAAXXZ",
+        "address": "0x162B6D0"
+    },
+
+
+    {
+        "name": "?stopOpen@FurnaceBlockActor@@UEAAXAEAVPlayer@@@Z",
+        "address": "0x1611970"
+    },
+
+    {
+        "name": "?canPullOutItem@FurnaceBlockActor@@UEBA_NAEAVBlockSource@@HHAEBVItemInstance@@@Z",
+        "address": "0x1611DE0"
     }
   ]
 }

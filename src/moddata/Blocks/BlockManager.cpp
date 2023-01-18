@@ -2,14 +2,18 @@
 
 void BlockManager::Initialize()
 {
-	furnaceTemplate = Zenova::BlockRegistry::registerBlock<DMFurnace>("equivalentexchange:furnace_template", BlockShape::BLOCK);
+	dmFurnace = Zenova::BlockRegistry::registerBlock<DMFurnace>("equivalentexchange:dm_furnace", BlockShape::BLOCK);
+	Zenova::BlockActorRegistry::registerBlockActor("DMFurnaceBlockActor", BlockActorType::DarkMatterFurnaceBlockActor, dmFurnace);
 }
 
 void BlockManager::InitializeBlockItems()
 {
-	ItemRegistry::registerBlockItem<BlockItem>("equivalentexchange:furnace_template", *furnaceTemplate->get());
+	ItemRegistry::registerBlockItem<BlockItem>(dmFurnace->get()->getDescriptionId(), *dmFurnace->get());
 }
 
-void BlockManager::InitializeCreativeBlocks()
+void BlockManager::InitializeCreativeBlocks() 
 {
+	Item::beginCreativeGroup("itemGroup.name.eeFurnaces", &dmFurnace->get()->getDefaultState(), nullptr);
+	Item::addCreativeItem(dmFurnace->get()->getDefaultState());
+	Item::endCreativeGroup();
 }

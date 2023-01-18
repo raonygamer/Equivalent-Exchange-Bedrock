@@ -4,5 +4,5 @@ itemGroup.name.exchangeItems=Itens de Troca Equivalente
 item.equivalentexchange:philosophers_stone.name=Pedra Filosofal
 key.charge_item=Carregar Item
 key.uncharge_item_helper=C.. Descarregar Item
-tile.equivalentexchange:dark_matter_furnace.name=Fornalha de Materia Negra
+tile.equivalentexchange:dm_furnace.name=Fornalha de Materia Negra
 itemGroup.name.eeFurnaces=Fornalhas do Exchange
