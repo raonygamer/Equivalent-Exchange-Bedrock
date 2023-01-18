@@ -6,6 +6,7 @@
 #include "minecraft/blockactor/BlockActorRegistry.h"
 #include "Zenova.h"
 #include "Base/FurnaceBlock.h"
+#include "ModBlocks/DMFurnace.h"
 
 namespace Json { class Value; }
 
