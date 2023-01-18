@@ -97,6 +97,7 @@ public:
 
 	virtual void reinit(const BlockLegacy&, int);
 	virtual void reinit(const Item&, int, int);
+	void init(const Item&, int, int, const CompoundTag*);
 };
 
 class ItemInstance : public ItemStackBase {
@@ -111,6 +112,5 @@ public:
 	ItemInstance clone() const { return ItemInstance(*this); }
 
 	virtual void reinit(const BlockLegacy&, int);
-protected:
 	virtual void reinit(const Item&, int, int);
 };

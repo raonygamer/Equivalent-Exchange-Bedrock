@@ -1,0 +1,8 @@
+{
+    "ui_defs": [
+        "alchemical_chest_screen.json",
+        "chest_screen.json",
+        "data_driven_grid.json",
+        "inventory_screen.json"
+    ]
+}

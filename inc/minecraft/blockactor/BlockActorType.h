@@ -43,5 +43,6 @@ enum class BlockActorType : int {
     BarrelBlock,
     Beehive,
     InfestedLeaves = 50,
-    InfestingLeaves = 51
+    InfestingLeaves = 51,
+    AlchemicalChestBlockActor = 72
 };

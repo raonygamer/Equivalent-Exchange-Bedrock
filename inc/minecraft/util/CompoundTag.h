@@ -30,6 +30,12 @@ public:
     float getFloat(StringView) const;
     int& putInt(std::string, int);
     int getInt(StringView) const;
+    std::string& putString(std::string name, std::string value) {
+        //return mTags[name].mTagStorage.emplace<>(value);
+    };
+    std::string getString(std::string) {
+
+    };
     short& putShort(std::string, short);
     short getShort(StringView) const;
     bool contains(StringView) const;

@@ -231,9 +231,20 @@ public:
         return mId;
     }
 
+    const TextureAtlasItem* getTextureAtlasItem() {
+        return mIconAtlas;
+    }
+
+    void setTextureAtlasItem(TextureAtlasItem& ref) {
+        mIconAtlas = &ref;
+    }
+
     const std::string& getCommandName() const;
 
     void _helpChangeInventoryItemInPlace(Actor&, ItemStack&, ItemStack&, ItemAcquisitionMethod) const;
+    const std::string& getNamespace() const {
+        return mNamespace;
+    }
 
     static const TextureAtlasItem& getTextureItem(const std::string&);
     static const TextureUVCoordinateSet& getIconTextureUVSet(const TextureAtlasItem&, int, int);

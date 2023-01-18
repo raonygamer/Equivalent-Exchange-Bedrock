@@ -1,5 +1,6 @@
 #include "PhilosophersStoneItem.h"
 #include "minecraft/item/ItemStack.h"
+#include "moddata/Managers/TickRuntime.h"
 
 PhilosophersStoneItem::PhilosophersStoneItem(const std::string& name, short id) : Item(name, id), textureItem() {
 	setMaxStackSize(1);
@@ -14,9 +15,4 @@ bool PhilosophersStoneItem::showsDurabilityInCreative() const {
 short PhilosophersStoneItem::getMaxDamage() const
 {
 	return 1005;
-}
-
-void PhilosophersStoneItem::setDamageValue(ItemStackBase& base, short value) const
-{
-	Item::setDamageValue(base, value);
 }

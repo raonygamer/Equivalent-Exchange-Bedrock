@@ -9,6 +9,7 @@
 #include "fmt/color.h"
 #include "moddata/Managers/TickRuntime.h"
 #include "moddata/Blocks/BlockManager.h"
+#include "minecraft/item/Item.h"
 
 class EquivalentExchange : public Zenova::Mod {
 public:

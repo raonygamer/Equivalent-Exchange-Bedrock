@@ -1,16 +1,26 @@
 {
   "vtable": [
     {
-      "name": "BowItem",
-      "address": "0x2B6FEB8",
-      "parent": "RangedWeaponItem",
-      "functions": []
-    },
-    {
-      "name": "RangedWeaponItem",
-      "address": "0x0000000",
-      "parent": "Item",
-      "functions": []
+      "name": "FurnaceBlock",
+      "address": "0x2BA6BF8",
+      "parent": "ActorBlock",
+      "functions": [
+        "??1FurnaceBlock@@UEAA@XZ",
+        "?onRemove@FurnaceBlock@@UEBAXAEAVBlockSource@@AEBVBlockPos@@@Z",
+        "?onPlace@FurnaceBlock@@UEBAXAEAVBlockSource@@AEBVBlockPos@@@Z",
+        "?animateTick@FurnaceBlock@@UEBAXAEAVBlockSource@@AEBVBlockPos@@AEAVRandom@@@Z",
+        "?getMappedFace@FurnaceBlock@@UEBAEEAEBVBlock@@@Z",
+        "?getComparatorSignal@FurnaceBlock@@UEBAHAEAVBlockSource@@AEBVBlockPos@@AEBVBlock@@E@Z",
+        "?getSilkTouchItemInstance@FurnaceBlock@@UEBA?AVItemInstance@@AEBVBlock@@@Z",
+        "?getResourceItem@FurnaceBlock@@UEBA?AVItemInstance@@AEAVRandom@@AEBVBlock@@H@Z",
+        "?asItemInstance@FurnaceBlock@@UEBA?AVItemInstance@@AEAVBlockSource@@AEBVBlockPos@@AEBVBlock@@@Z",
+        "?getPlacementBlock@FurnaceBlock@@UEBAAEBVBlock@@AEAVActor@@AEBVBlockPos@@EAEBVVec3@@H@Z",
+        "?use@FurnaceBlock@@UEBA_NAEAVPlayer@@AEBVBlockPos@@@Z",
+        "?isInteractiveBlock@FurnaceBlock@@UEBA_NXZ",
+        "?isCraftingBlock@FurnaceBlock@@UEBA_NXZ",
+        "?isContainerBlock@FurnaceBlock@@UEBA_NXZ",
+        "?hasComparatorSignal@FurnaceBlock@@UEBA_NXZ"
+      ]
     },
     {
       "name": "Item",
@@ -1311,6 +1321,22 @@
   },
 
   "functions": [
+    {
+      "name": "?setCustomLore@ItemStack@@QEAAHAEBV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@@Z",
+      "address": "0x156F560"
+    },
+    {
+      "name": "?init@ItemStack@@QEAAXAEBVItem@@HHPEBVCompoundTag@@@Z",
+      "address": "0x156EC20"
+    },
+    {
+      "name": "??0ChestBlockActor@@QEAA@W4BlockActorType@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@W4BlockActorRendererId@@AEBVBlockPos@@_N@Z",
+      "address": "0x161C740"
+    },
+    {
+      "name": "??0ChestBlock@@QEAA@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@HW4ChestType@0@W4MaterialType@@@Z",
+      "address": "0x1689AB0"
+    },
     {
       "name": "?unregisterItems@VanillaItems@@SAXXZ",
       "address": "0x159F260"

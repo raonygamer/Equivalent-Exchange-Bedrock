@@ -7,6 +7,7 @@
 
 class ItemManager {
 public:
+	static bool InitializedClientData;
 	static WeakPtr<PhilosophersStoneItem> philosophersStoneItem;
 
 	static void Initialize();

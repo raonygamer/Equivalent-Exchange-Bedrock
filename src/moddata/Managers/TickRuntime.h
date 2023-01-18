@@ -1,5 +1,7 @@
 #pragma once
 
+#include "moddata/Items/ItemManager.h"
+
 class TickRuntime {
 public:
 	inline static long Ticks;
@@ -7,11 +9,9 @@ public:
 
 	static void Tick() {
 		Ticks++;
-
 	}
 
 	static void Update() {
 		Updates++;
-
 	}
 };

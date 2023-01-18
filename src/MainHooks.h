@@ -6,6 +6,8 @@
 #include "minecraft/block/BlockRegistry.h"
 #include "minecraft/block/BlockTessellatorRegistry.h"
 #include "moddata/Blocks/BlockManager.h"
+#include "minecraft/blockactor/BlockActorRegistry.h"
+#include "minecraft/client/BlockActorRenderDispatcher.h"
 
 class MainHooks {
 public:
@@ -35,11 +37,10 @@ public:
 		ItemManager::Deinitialize();
 	}
 
-	inline static void (*ItemStackReinitTrampoline)(ItemStack*, const Item&, int, int);
-	static void ItemStackReinitHook(ItemStack* self, const Item& item, int id, int aux) {
-		if (item.getCommandName() == "equivalentexchange:philosophers_stone")
-			item.setDamageValue(*self, 1000);
-		ItemStackReinitTrampoline(self, item, id, aux);
+	inline static void (*ItemStackReinitTrampoline)(ItemStack*, const Item&, int, int, const CompoundTag*);
+	static void ItemStackReinitHook(ItemStack* self, const Item& item, int id, int aux, const CompoundTag* tag) {
+		//Zenova_Info("Reinitialized Stack: {}", item.getCommandName());
+		ItemStackReinitTrampoline(self, item, id, aux, tag);
 	}
 
 	inline static int (*ContentLogTrampoline)(ContentLog*, LogLevel, LogArea, std::string&);
@@ -76,5 +77,27 @@ public:
 		if (!Zenova::BlockTessellatorRegistry::canRender(shape))
 			return CanRenderBlockInGuiTrampoline(shape);
 		return true;
+	}
+
+	inline static std::shared_ptr<BlockActor> (*CreateBlockEntityTrampoline)(BlockActorType, const BlockPos&, const BlockLegacy&);
+	static std::shared_ptr<BlockActor> CreateBlockEntityHook(BlockActorType type, const BlockPos& pos, const BlockLegacy& block) {
+		std::shared_ptr<BlockActor> blockActor = CreateBlockEntityTrampoline(type, pos, block);
+		if (!blockActor)
+			return Zenova::BlockActorRegistry::createBlockEntity(type, pos);
+		return blockActor;
+	}
+
+	inline static void (*InitializeBlockEntitiesTrampoline)();
+	static void InitializeBlockEntitiesHook() {
+		InitializeBlockEntitiesTrampoline();
+
+		Zenova::BlockActorRegistry::initBlockEntities();
+	}
+
+	inline static void (*InitializeBlockActorRenderersTrampoline)(BlockActorRenderDispatcher*, GeometryGroup&, mce::TextureGroup&, BlockTessellator&, const ActorResourceDefinitionGroup&);
+	static void InitializeBlockActorRenderersHook(BlockActorRenderDispatcher* self, GeometryGroup& geometry, mce::TextureGroup& textures, BlockTessellator& blockTessellator, const ActorResourceDefinitionGroup& definitions) {
+		InitializeBlockActorRenderersTrampoline(self, geometry, textures, blockTessellator, definitions);
+
+		//self->mRendererMap[BlockActorRendererId::TR_INFESTINGLEAVES_RENDERER] = std::make_unique<InfestingLeavesRenderer>(textures, blockTessellator);
 	}
 };

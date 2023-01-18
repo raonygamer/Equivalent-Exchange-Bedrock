@@ -9,6 +9,7 @@ class TextureAtlasItem {
 protected:
     std::string mName;
     int mParsedNodeIndex = 0;
+public:
     std::vector<std::vector<TextureUVCoordinateSet>> mTextureUVs;
 
 public:

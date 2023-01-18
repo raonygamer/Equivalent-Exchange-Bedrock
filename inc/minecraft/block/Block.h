@@ -38,7 +38,7 @@ public:
     bool canHaveExtraData() const 
     {
         if (mLegacyBlock != nullptr)
-            mLegacyBlock->canHaveExtraData();
+            return mLegacyBlock->canHaveExtraData();
         else
             return false;
     };
