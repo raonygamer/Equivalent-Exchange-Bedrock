@@ -6,7 +6,7 @@
 #include "minecraft/actor/Player.h"
 
 class FurnaceBlockActor : public BlockActor, public Container {
-	char baseSize[0xCB0];
+	char baseSize[0xCA0];
 public:
 	FurnaceBlockActor(BlockActorType, const BlockPos&, const Util::HashString&, LevelSoundEvent, ContainerType, int, const Block&, const Block&); //0x1629340
 	virtual ~FurnaceBlockActor(); //0x160EF40

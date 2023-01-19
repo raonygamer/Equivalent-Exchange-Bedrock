@@ -2176,6 +2176,10 @@
     {
       "name": "?setItem@FurnaceBlockActor@@UEAAXHAEBVItemStack@@@Z",
       "address": "0x1629540"
+    },
+    {
+      "name": "?getName@FurnaceBlockActor@@UEBA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ",
+      "address": "0x16296C0"
     }
   ]
 }

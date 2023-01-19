@@ -1,4 +1,7 @@
 #include "DMFurnace.h"
+#include "minecraft/block/VanillaBlockRegistry.h"
+#include "minecraft/block/BlockRegistry.h"
+#include "../BlockManager.h"
 
 DMFurnace::DMFurnace(const std::string& name, int id) : ActorBlock(name, id, Material::getMaterial(MaterialType::Stone))
 {
@@ -18,16 +21,6 @@ bool DMFurnace::isCraftingBlock() const
 	return true;
 }
 
-void DMFurnace::onPlace(BlockSource&, const BlockPos& pos) const
-{
-	
-}
-
-void DMFurnace::onRemove(BlockSource&, const BlockPos&) const
-{
-
-}
-
 bool DMFurnace::use(Player& player, const BlockPos& pos) const
 {
 	BlockSource& blockSource = player.getRegion();
@@ -41,9 +34,9 @@ bool DMFurnace::use(Player& player, const BlockPos& pos) const
 	}
 }
 
-
-
 std::shared_ptr<BlockActor> DMFurnace::newBlockEntity(const BlockPos& pos) const
 {
-	return std::make_shared<DMFurnaceBlockActor>(BlockActorType::DarkMatterFurnaceBlockActor, pos, Util::HashString("furnace"), LevelSoundEvent::FurnaceUse, ContainerType::FURNACE, 0, this->getDefaultState(), this->getDefaultState());
+	Zenova_Info("New block entity, executed.");
+	return std::make_shared<DMFurnaceBlockActor>(BlockActorType::DarkMatterFurnaceBlockActor, pos, Util::HashString("dm_furnace"), LevelSoundEvent::Undefined, ContainerType::FURNACE, 1, *VanillaBlocks::mGrass, *VanillaBlocks::mCobblestone);
 }
+//

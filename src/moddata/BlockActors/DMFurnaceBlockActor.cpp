@@ -1,9 +1,7 @@
 #include "DMFurnaceBlockActor.h"
 
-DMFurnaceBlockActor::DMFurnaceBlockActor(BlockActorType type, const BlockPos& pos, const Util::HashString& hashString, LevelSoundEvent sound, ContainerType containerType, int idk, const Block& normal, const Block& lit) : FurnaceBlockActor(type, pos, hashString, sound, containerType, idk, normal, lit) {}
-DMFurnaceBlockActor::~DMFurnaceBlockActor() {};
-std::string DMFurnaceBlockActor::getName() const {
-	return "Furnace";
+DMFurnaceBlockActor::DMFurnaceBlockActor(BlockActorType type, const BlockPos& pos, const Util::HashString& hashString, LevelSoundEvent sound, ContainerType containerType, int burnIterval, const Block& normal, const Block& lit) : FurnaceBlockActor(type, pos, hashString, sound, containerType, burnIterval, normal, lit) {
+	mRendererId = TR_DEFAULT_RENDERER;
 }
 
 int DMFurnaceBlockActor::getContainerSize() const
