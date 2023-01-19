@@ -2,6 +2,7 @@
 #include "minecraft/block/ActorBlock.h"
 #include "Zenova.h"
 #include "minecraft/blockactor/BlockActorFactory.h"
+#include "minecraft/blockactor/BlockActorRegistry.h"
 #include "moddata/BlockActors/DMFurnaceBlockActor.h"
 
 class DMFurnace : public ActorBlock {

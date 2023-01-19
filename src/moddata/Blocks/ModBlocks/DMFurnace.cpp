@@ -45,6 +45,5 @@ bool DMFurnace::use(Player& player, const BlockPos& pos) const
 
 std::shared_ptr<BlockActor> DMFurnace::newBlockEntity(const BlockPos& pos) const
 {
-	Zenova_Info("New Block Entity created!");
-	return std::make_shared<DMFurnaceBlockActor>(pos, this->getDefaultState(), this->getDefaultState());
+	return std::make_shared<DMFurnaceBlockActor>(BlockActorType::DarkMatterFurnaceBlockActor, pos, Util::HashString("furnace"), LevelSoundEvent::FurnaceUse, ContainerType::FURNACE, 0, this->getDefaultState(), this->getDefaultState());
 }

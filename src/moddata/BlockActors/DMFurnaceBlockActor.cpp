@@ -1,11 +1,9 @@
 #include "DMFurnaceBlockActor.h"
 
-DMFurnaceBlockActor::DMFurnaceBlockActor(const BlockPos& pos, const Block& normal, const Block& lit) : FurnaceBlockActor(BlockActorType::DarkMatterFurnaceBlockActor, pos, Util::HashString(), LevelSoundEvent::AddChest, ContainerType::FURNACE, normal, lit) {
-	setCustomName("DMFurnace");
-}
+DMFurnaceBlockActor::DMFurnaceBlockActor(BlockActorType type, const BlockPos& pos, const Util::HashString& hashString, LevelSoundEvent sound, ContainerType containerType, int idk, const Block& normal, const Block& lit) : FurnaceBlockActor(type, pos, hashString, sound, containerType, idk, normal, lit) {}
 DMFurnaceBlockActor::~DMFurnaceBlockActor() {};
 std::string DMFurnaceBlockActor::getName() const {
-	return "DMFurnace";
+	return "Furnace";
 }
 
 int DMFurnaceBlockActor::getContainerSize() const

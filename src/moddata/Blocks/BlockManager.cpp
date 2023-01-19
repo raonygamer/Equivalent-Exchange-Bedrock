@@ -3,7 +3,7 @@
 void BlockManager::Initialize()
 {
 	dmFurnace = Zenova::BlockRegistry::registerBlock<DMFurnace>("equivalentexchange:dm_furnace", BlockShape::BLOCK);
-	Zenova::BlockActorRegistry::registerBlockActor("DMFurnaceBlockActor", BlockActorType::DarkMatterFurnaceBlockActor, dmFurnace);
+	Zenova::BlockActorRegistry::registerBlockActor("DMFurnace", BlockActorType::DarkMatterFurnaceBlockActor, dmFurnace);
 }
 
 void BlockManager::InitializeBlockItems()

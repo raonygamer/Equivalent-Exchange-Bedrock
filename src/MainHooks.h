@@ -97,7 +97,5 @@ public:
 	inline static void (*InitializeBlockActorRenderersTrampoline)(BlockActorRenderDispatcher*, GeometryGroup&, mce::TextureGroup&, BlockTessellator&, const ActorResourceDefinitionGroup&);
 	static void InitializeBlockActorRenderersHook(BlockActorRenderDispatcher* self, GeometryGroup& geometry, mce::TextureGroup& textures, BlockTessellator& blockTessellator, const ActorResourceDefinitionGroup& definitions) {
 		InitializeBlockActorRenderersTrampoline(self, geometry, textures, blockTessellator, definitions);
-
-		//self->mRendererMap[BlockActorRendererId::TR_INFESTINGLEAVES_RENDERER] = std::make_unique<InfestingLeavesRenderer>(textures, blockTessellator);
 	}
 };

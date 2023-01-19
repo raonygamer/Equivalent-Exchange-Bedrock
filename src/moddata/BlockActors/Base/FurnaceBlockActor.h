@@ -6,13 +6,16 @@
 #include "minecraft/actor/Player.h"
 
 class FurnaceBlockActor : public BlockActor, public Container {
+	char baseSize[0xCB0];
 public:
-	FurnaceBlockActor(BlockActorType, const BlockPos&, const Util::HashString&, LevelSoundEvent, ContainerType, const Block&, const Block&); //0x1629340
+	FurnaceBlockActor(BlockActorType, const BlockPos&, const Util::HashString&, LevelSoundEvent, ContainerType, int, const Block&, const Block&); //0x1629340
 	virtual ~FurnaceBlockActor(); //0x160EF40
 
 	//FurnaceBlockActor::`vftable'{for `Container'}
 	virtual const ItemStack& getItem(int) const; //0x16170E0
 	virtual void setItem(int, const ItemStack&); //0x1629540
+	virtual int getMaxStackSize() const { return 64; }; //toset
+	virtual int getContainerSize() const { return 3; }; //toset
 	virtual void startOpen(Player&); //0x1629750
 	virtual void stopOpen(Player&); //0x16297A0
 	virtual bool canPushInItem(BlockSource&, int, int, const ItemInstance&) const; //0x1629820
