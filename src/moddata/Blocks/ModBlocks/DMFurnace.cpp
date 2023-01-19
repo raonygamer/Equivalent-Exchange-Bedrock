@@ -28,13 +28,23 @@ void DMFurnace::onRemove(BlockSource&, const BlockPos&) const
 
 }
 
-bool DMFurnace::use(Player&, const BlockPos&) const
+bool DMFurnace::use(Player& player, const BlockPos& pos) const
 {
-	return false;
+	BlockSource& blockSource = player.getRegion();
+	BlockActor* blockEntity = blockSource.getBlockEntity(pos);
+	if (blockEntity != nullptr) {
+		player.openFurnace(pos);
+		return true;
+	}
+	else {
+		return false;
+	}
 }
+
+
 
 std::shared_ptr<BlockActor> DMFurnace::newBlockEntity(const BlockPos& pos) const
 {
 	Zenova_Info("New Block Entity created!");
-	return nullptr;//std::make_shared<DMFurnaceBlockActor>(pos, this->getDefaultState(), this->getDefaultState());
+	return std::make_shared<DMFurnaceBlockActor>(pos, this->getDefaultState(), this->getDefaultState());
 }

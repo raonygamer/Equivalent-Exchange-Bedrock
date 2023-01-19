@@ -101,16 +101,16 @@ public:
     void removeSizeChangeListener(ContainerSizeChangeListener* listener);
     virtual void addContentChangeListener(ContainerContentChangeListener* listener);
     virtual void removeContentChangeListener(ContainerContentChangeListener* listener);
-    virtual const ItemStack& getItem(int slot) const;
+    virtual const ItemStack& getItem(int slot) const = 0;
     virtual bool hasRoomForItem(const ItemStack& item);
     virtual void addItem(ItemStack& item);
     virtual bool addItemToFirstEmptySlot(ItemStack& item);
-    virtual void setItem(int slot, const ItemStack& item);
+    virtual void setItem(int slot, const ItemStack& item) = 0;
     virtual void removeItem(int slot, int count);
     virtual void removeAllItems();
     virtual void dropContents(BlockSource& region, const Vec3& pos, bool randomizeDrop);
-    virtual int getContainerSize() const;
-    virtual int getMaxStackSize() const;
+    virtual int getContainerSize() const = 0;
+    virtual int getMaxStackSize() const = 0;
     virtual void startOpen(Player& player);
     virtual void stopOpen(Player& player);
     virtual std::vector<ItemStack> getSlotCopies() const;
@@ -131,8 +131,6 @@ public:
     virtual void addAdditionalSaveData(CompoundTag& tag);
     virtual void createTransactionContext(std::function<void(Container&, int, const ItemStack&, const ItemStack&)> callback, std::function<void()> execute);
     virtual void triggerTransactionChange(int slot, const ItemStack& oldItem, const ItemStack& newItem);
-    static const std::string& getContainerTypeName(ContainerType type) {
-        return stringify(type);
-    }
+    static const std::string& getContainerTypeName(ContainerType type);
     static ContainerType getContainerTypeId(const std::string&);
 };
