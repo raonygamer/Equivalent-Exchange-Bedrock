@@ -1,8 +1,22 @@
 {
 	"format_version": "1.14.0",
-	"equivalentexchange:dark_matter_furnace": {
+	"equivalentexchange:dm_furnace": {
 		"textures": {
-			"up": "dark_matter_block"
+			"up": "dark_matter_block",
+			"down": "dark_matter_block",
+			"south": "dark_matter_block",
+			"side": "dark_matter_block",
+			"north": "dark_matter_furnace_front_off"
+		},
+        "sound": "metal"
+	},
+	"equivalentexchange:dm_furnace_lit": {
+		"textures": {
+			"up": "dark_matter_block",
+			"down": "dark_matter_block",
+			"south": "dark_matter_block",
+			"side": "dark_matter_block",
+			"north": "dark_matter_furnace_front_on"
 		},
         "sound": "metal"
 	}

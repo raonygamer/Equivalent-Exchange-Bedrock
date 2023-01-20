@@ -82,7 +82,7 @@ public:
 	inline static std::shared_ptr<BlockActor> (*CreateBlockEntityTrampoline)(BlockActorType, const BlockPos&, const BlockLegacy&);
 	static std::shared_ptr<BlockActor> CreateBlockEntityHook(BlockActorType type, const BlockPos& pos, const BlockLegacy& block) {
 		std::shared_ptr<BlockActor> blockActor = CreateBlockEntityTrampoline(type, pos, block);
-		if (!blockActor)
+		if (!blockActor) // and if the vannila game dont find 
 			return Zenova::BlockActorRegistry::createBlockEntity(type, pos);
 		return blockActor;
 	}

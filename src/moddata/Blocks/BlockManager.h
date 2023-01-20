@@ -13,6 +13,7 @@ namespace Json { class Value; }
 class BlockManager {
 public:
 	inline static WeakPtr<BlockLegacy>* dmFurnace;
+	inline static WeakPtr<BlockLegacy>* dmFurnaceLit;
 
 	static void Initialize();
 	static void InitializeBlockItems();

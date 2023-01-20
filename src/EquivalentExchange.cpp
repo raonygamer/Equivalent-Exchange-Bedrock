@@ -4,11 +4,6 @@ void EquivalentExchange::Start() {
 	if (Zenova::Minecraft::version() == Zenova::Version("1.14.60.5"))
 	{
 		Zenova_Info("Equivalent Exchange loaded successfully, creating hooks and instantiating content.");
-		{
-			Zenova_Info("Furnace block actor: {}", sizeof(FurnaceBlockActor));
-			Zenova_Info("BlockActor: {}", sizeof(BlockActor));
-			Zenova_Info("Container: {}", sizeof(Container));
-		}
 
 		CreateHooks();
 		CreateInputs();
