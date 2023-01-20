@@ -1,11 +1,11 @@
 #pragma once
 
+#include "moddata/Blocks/BlockManager.h"
 #include "moddata/Items/ItemManager.h"
 #include "minecraft/world/ContentLog.h"
 #include "minecraft/item/Recipes.h"
 #include "minecraft/block/BlockRegistry.h"
 #include "minecraft/block/BlockTessellatorRegistry.h"
-#include "moddata/Blocks/BlockManager.h"
 #include "minecraft/blockactor/BlockActorRegistry.h"
 #include "minecraft/client/BlockActorRenderDispatcher.h"
 

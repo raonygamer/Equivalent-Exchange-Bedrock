@@ -1,3 +1,4 @@
+#pragma once
 #include "Zenova.h"
 #include "Zenova/Minecraft/Inputs.h"
 
@@ -7,7 +8,6 @@
 #include "MainInputs.h"
 #include "minecraft/item/VanillaItems.h"
 #include "moddata/Managers/TickRuntime.h"
-#include "moddata/Blocks/BlockManager.h"
 #include "minecraft/item/Item.h"
 
 class EquivalentExchange : public Zenova::Mod {
